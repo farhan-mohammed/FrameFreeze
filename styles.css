@@ -177,7 +177,7 @@ footer {
 
 .info--sec {
   min-height: 80px;
-  width: 200px;
+  width: 25vw;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -243,7 +243,7 @@ footer.container {
 }
 
 .copy a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
