@@ -1,24 +1,66 @@
+$footer-color: #eee;
 .footer {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-flow: row wrap;
+	background-color: $dark-back;
 }
-footer .nav {
-	justify-content: flex-end;
-	display: flex;
+.foot {
+	&-ul {
+		list-style: none;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		width: 18rem;
+		margin: 0 auto;
+		margin-top: 1rem;
+		justify-content: space-around;
+		&-li {
+			font-size: 3.5rem;
+		}
+	}
+	&-a {
+		color: $footer-color;
+		&:active {
+			text-decoration: none;
+			color: inherit;
+		}
+		&:hover,
+		&:focus {
+			color: inherit;
+			opacity: 0.6;
+			outline: none;
+		}
+	}
+	&-text {
+		color: $footer-color;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 2rem;
+		font-size: 2.5rem;
+		font-family: 'Montserrat';
+	}
+}
 
-	display: block;
-	flex: 2 auto;
-}
-footer .logo {
-	flex: 1 auto;
-}
-footer.container {
-	display: flex;
-	flex-direction: row;
-}
-.copy a {
-	color: #000;
-	text-decoration: none;
-}
+// .footer {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-content: center;
+// 	flex-flow: row wrap;
+// }
+// footer .nav {
+// 	justify-content: flex-end;
+// 	display: flex;
+
+// 	display: block;
+// 	flex: 2 auto;
+// }
+// footer .logo {
+// 	flex: 1 auto;
+// }
+// footer.container {
+// 	display: flex;
+// 	flex-direction: row;
+// }
+// .copy a {
+// 	color: #000;
+// 	text-decoration: none;
+// }
