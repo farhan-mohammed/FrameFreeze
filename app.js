@@ -27,11 +27,12 @@ function footerRefresh() {
 	let displayWidth = $('.footer').width();
 	let footerHeight = $('.footer').outerHeight();
 
-	let cuts = Math.floor(displayWidth / 50);
+	let cuts = Math.floor(displayWidth / 20);
 	let cut = displayWidth / cuts;
 
 	$('.footer').css({ 'margin-top': '-' + cut + 'px' });
 	$('.footer').css({ 'padding-top': cut + 'px' });
+	$('.layout-sec:last-child').css({ 'padding-bottom': cut + 'px' });
 
 	const xPerc = cut * 100 / displayWidth;
 	const yPerc = cut * 100 / $('.footer').outerHeight();

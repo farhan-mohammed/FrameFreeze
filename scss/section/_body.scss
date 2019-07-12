@@ -6,27 +6,160 @@
 html {
 	font-size: 62.5%;
 }
+.container {
+	position: relative;
+}
 html,
 body {
 	overflow-x: none;
 }
 .layout {
 	margin-top: $header-height;
+	height: fit-content;
+	font-family: 'Montserrat';
 	&-sec {
 		width: 100%;
-		height: calc(100vh - #{$header-height});
 	}
 }
 .s1 {
-	background-color: green;
+	height: calc(100vh - #{$header-height});
+	position: relative;
+	color: white;
+	text-align: center;
+	&-info {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		&-title {
+			line-height: 1em;
+			font-family: "Quatro sans";
+			font-size: 7rem;
+			text-transform: uppercase;
+			display: block;
+		}
+		&-date {
+			line-height: 1em;
+			font-size: 3rem;
+
+			display: block;
+		}
+		&-place {
+			line-height: 1em;
+			font-size: 3rem;
+			display: block;
+		}
+	}
+	&-slogan {
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 1rem;
+		left: 0;
+		width: 100%;
+		font-size: 3rem;
+	}
 }
 .s2 {
-	background-color: blue;
+	background-color: #123;
+	&__con {
+		display: flex;
+		flex-direction: row;
+		padding: 1rem;
+		height: 25rem;
+		min-height: fit-content;
+		color: white;
+		&-text {
+			flex: 1;
+			padding: 0.25rem;
+			&--title {
+				width: 80%;
+				font-size: $heading_size;
+				line-height: 1em;
+				display: block;
+				text-transform: uppercase;
+			}
+			&--body {
+				text-align: justify;
+				line-height: 1em;
+				display: block;
+			}
+		}
+		&-gallery {
+			background-image: url("images/thumbnail.png");
+			flex: 1.25;
+		}
+	}
 }
 .s3 {
-	background-color: purple;
+	background-color: #345;
+	height: 18em;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	&__con {
+		text-align: center;
+		color: white;
+		padding-bottom: 1rem;
+		display: inline-block;
+		margin: auto;
+		&-title {
+			text-transform: uppercase;
+			font-size: $heading_size;
+			display: block;
+		}
+		&-body {
+			width: 70%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
 }
 .s4 {
 	background-color: red;
+	height: 30rem;
+}
+.s5 {
+	background-color: #574774;
+	height: fit-content;
+	min-height: 30rem;
+	&__con {
+		height: fit-content;
+		min-height: 100%;
+		padding: 2rem;
+		width: 100%;
+		&-title {
+			width: 100%;
+			text-align: center;
+			display: block;
+			color: white;
+			font-size: $heading_size;
+		}
+		&-list {
+			padding: 0 10rem;
+			list-style: none;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			&--item {
+				height: fit-content;
+				display: block;
+				margin: auto 2rem;
+			}
+			&--img {
+				object-fit: contain;
+			}
+
+			.sponsor-bg {
+				max-height: 7rem;
+			}
+			.sponsor-md {
+				max-height: 4rem;
+			}
+			.sponsor-sm {
+				max-height: 2em;
+			}
+		}
+	}
 }
 /**/

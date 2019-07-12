@@ -1,6 +1,7 @@
 .head {
 	&er {
 		width: 100vw;
+		z-index: 500;
 		background-color: $dark-back;
 		color: white;
 		height: $header-height;
