@@ -15,20 +15,22 @@ body {
 }
 .layout {
 	margin-top: $header-height;
-	height: fit-content;
 	font-family: 'Montserrat';
+	position: relative;
 	&-sec {
+		position: relative;
+		height: calc(100vh - #{$header-height});
 		width: 100%;
 	}
 }
 .s1 {
-	height: calc(100vh - #{$header-height});
 	position: relative;
 	color: white;
 	text-align: center;
 	&-info {
 		position: absolute;
 		top: 2rem;
+		z-index: 300;
 		left: 2rem;
 		&-title {
 			line-height: 1em;
@@ -52,6 +54,7 @@ body {
 	&-slogan {
 		text-transform: uppercase;
 		position: absolute;
+		z-index: 300;
 		bottom: 1rem;
 		left: 0;
 		width: 100%;
@@ -60,15 +63,23 @@ body {
 }
 .s2 {
 	background-color: #123;
+	display: flex;
+	height: 50vh;
+	align-items: center;
+	justify-content: center;
 	&__con {
+		z-index: 10;
 		display: flex;
 		flex-direction: row;
 		padding: 1rem;
 		height: 25rem;
 		min-height: fit-content;
 		color: white;
+		background-color: orange;
+		width: 80%;
 		&-text {
 			flex: 1;
+			background-color: purple;
 			padding: 0.25rem;
 			&--title {
 				width: 80%;
@@ -84,24 +95,44 @@ body {
 			}
 		}
 		&-gallery {
+			background-color: grey;
 			background-image: url("images/thumbnail.png");
 			flex: 1.25;
+		}
+	}
+	&-closer {
+		width: 50vw;
+		height: calc(100% + 200vh);
+		background-color: $blue;
+		position: absolute;
+		z-index: 0;
+		bottom: 0;
+		transform-origin: right bottom;
+		$s2-rotate: 25deg;
+		&-R {
+			left: 50%;
+			transform-origin: left bottom;
+			transform: rotate($s2-rotate);
+		}
+		&-L {
+			right: 50%;
+			transform: rotate(-$s2-rotate);
 		}
 	}
 }
 .s3 {
 	background-color: #345;
-	height: 18em;
 	width: 100%;
 	display: flex;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 	&__con {
+		background-color: red;
 		text-align: center;
 		color: white;
 		padding-bottom: 1rem;
 		display: inline-block;
-		margin: auto;
+		width: 80%;
 		&-title {
 			text-transform: uppercase;
 			font-size: $heading_size;
@@ -116,19 +147,26 @@ body {
 }
 .s4 {
 	background-color: red;
-	height: 30rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__con {
+		background-color: #1235;
+		width: 70%;
+		text-align: center;
+		color: white;
+	}
 }
 .s5 {
 	background-color: #574774;
-	height: fit-content;
-	min-height: 30rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&__con {
-		height: fit-content;
-		min-height: 100%;
+		background-color: red;
+		width: 70%;
 		padding: 2rem;
-		width: 100%;
 		&-title {
-			width: 100%;
 			text-align: center;
 			display: block;
 			color: white;
@@ -161,5 +199,11 @@ body {
 			}
 		}
 	}
+}
+.s6 {
+	background-color: #123;
+}
+.s7 {
+	background-color: aquamarine;
 }
 /**/
