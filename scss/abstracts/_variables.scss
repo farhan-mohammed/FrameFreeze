@@ -3,6 +3,12 @@ $header-height: 5rem;
 $blue: #52adf3;
 $grey: #afafaf;
 
-$dark-back: darken($grey, 20%);
-
 $heading_size: 3rem;
+
+$color-med: #57aef1;
+$color-dark: #001e44;
+$color-less-dark: #072654;
+$color-light: #00fefe;
+
+//footer header
+$dark-back: $color-dark;

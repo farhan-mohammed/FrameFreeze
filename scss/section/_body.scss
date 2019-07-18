@@ -3,29 +3,30 @@
 	border: 0;
 	margin: 0;
 }
-html {
-	font-size: 62.5%;
-}
 .container {
 	position: relative;
 }
 html,
 body {
 	overflow-x: none;
+	background-color: $color-less-dark;
+	color: white;
+	z-index: -1000;
 }
 .layout {
 	margin-top: $header-height;
 	font-family: 'Montserrat';
 	position: relative;
 	&-sec {
+		@include flexcenter;
 		position: relative;
 		height: calc(100vh - #{$header-height});
 		width: 100%;
 	}
 }
 .s1 {
+	display: block;
 	position: relative;
-	color: white;
 	text-align: center;
 	&-info {
 		position: absolute;
@@ -62,25 +63,19 @@ body {
 	}
 }
 .s2 {
-	background-color: #123;
-	display: flex;
-	height: 50vh;
-	align-items: center;
-	justify-content: center;
 	&__con {
 		z-index: 10;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		padding: 1rem;
 		height: 25rem;
 		min-height: fit-content;
-		color: white;
-		background-color: orange;
 		width: 80%;
+		@include sec-background-color;
 		&-text {
-			flex: 1;
-			background-color: purple;
 			padding: 0.25rem;
+			flex: 1 0 250px;
 			&--title {
 				width: 80%;
 				font-size: $heading_size;
@@ -89,15 +84,16 @@ body {
 				text-transform: uppercase;
 			}
 			&--body {
+				font-size: 1.75rem;
 				text-align: justify;
 				line-height: 1em;
 				display: block;
 			}
 		}
 		&-gallery {
-			background-color: grey;
 			background-image: url("images/thumbnail.png");
-			flex: 1.25;
+			flex: 1 0 250px;
+			min-height: 100%;
 		}
 	}
 	&-closer {
@@ -121,18 +117,14 @@ body {
 	}
 }
 .s3 {
-	background-color: #345;
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	&__con {
 		background-color: red;
 		text-align: center;
-		color: white;
 		padding-bottom: 1rem;
 		display: inline-block;
 		width: 80%;
+		@include sec-background-color;
 		&-title {
 			text-transform: uppercase;
 			font-size: $heading_size;
@@ -146,30 +138,21 @@ body {
 	}
 }
 .s4 {
-	background-color: red;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	&__con {
 		background-color: #1235;
 		width: 70%;
 		text-align: center;
-		color: white;
+		@include sec-background-color;
 	}
 }
 .s5 {
-	background-color: #574774;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	&__con {
-		background-color: red;
+		@include sec-background-color;
 		width: 70%;
 		padding: 2rem;
 		&-title {
 			text-align: center;
 			display: block;
-			color: white;
 			font-size: $heading_size;
 		}
 		&-list {
@@ -201,9 +184,7 @@ body {
 	}
 }
 .s6 {
-	background-color: #123;
 }
 .s7 {
-	background-color: aquamarine;
 }
 /**/
