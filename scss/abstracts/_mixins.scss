@@ -7,3 +7,18 @@
 @mixin sec-background-color {
 	background-color: rgba(0, 0, 0, 0.1);
 }
+
+@mixin snowflake-placing {
+	&:nth-child(4n) {
+		top: 75vh;
+	}
+	&:nth-child(4n + 1) {
+		top: 55vh;
+	}
+	&:nth-child(4n + 2) {
+		top: 30vh;
+	}
+	&:nth-child(4n + 3) {
+		top: 10vh;
+	}
+}

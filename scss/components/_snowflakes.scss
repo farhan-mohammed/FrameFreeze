@@ -1,0 +1,48 @@
+.snowflake {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-size: 3rem;
+	z-index: 200;
+	color: $color-med;
+	&s {
+		list-style: none;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		&-son {
+			width: fit-content;
+			height: fit-content;
+			position: absolute;
+			opacity: 0.5;
+			@include snowflake-placing;
+			> i {
+				animation: ani-rotate 2s infinite;
+			}
+
+			&.one {
+				left: 10vw;
+			}
+			&.two {
+				left: 33vw;
+			}
+			&.three {
+				right: 33vw;
+			}
+			&.four {
+				right: 10vw;
+			}
+		}
+	}
+}
+@keyframes ani-rotate {
+	from {
+		transform: rotateY(0);
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
+}

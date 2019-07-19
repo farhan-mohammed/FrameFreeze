@@ -301,3 +301,47 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%; }
+
+.snowflake {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  z-index: 200;
+  color: #57aef1; }
+  .snowflakes {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .snowflakes-son {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      opacity: 0.5; }
+      .snowflakes-son:nth-child(4n) {
+        top: 75vh; }
+      .snowflakes-son:nth-child(4n + 1) {
+        top: 55vh; }
+      .snowflakes-son:nth-child(4n + 2) {
+        top: 30vh; }
+      .snowflakes-son:nth-child(4n + 3) {
+        top: 10vh; }
+      .snowflakes-son > i {
+        animation: ani-rotate 2s infinite; }
+      .snowflakes-son.one {
+        left: 10vw; }
+      .snowflakes-son.two {
+        left: 33vw; }
+      .snowflakes-son.three {
+        right: 33vw; }
+      .snowflakes-son.four {
+        right: 10vw; }
+
+@keyframes ani-rotate {
+  from {
+    transform: rotateY(0); }
+  to {
+    transform: rotateY(360deg); } }
