@@ -63,6 +63,7 @@ body {
 	}
 }
 .s2 {
+	background-image: linear-gradient($dark-back, #57aef1, #57aef1, #57aef1);
 	&__con {
 		z-index: 10;
 		display: flex;
@@ -72,7 +73,7 @@ body {
 		height: 25rem;
 		min-height: fit-content;
 		width: 80%;
-		@include sec-background-color;
+		color: white;
 		&-text {
 			padding: 0.25rem;
 			flex: 1 0 250px;
@@ -96,35 +97,34 @@ body {
 			min-height: 100%;
 		}
 	}
-	&-closer {
-		width: 50vw;
-		height: calc(100% + 200vh);
-		background-color: $blue;
-		position: absolute;
-		z-index: 0;
-		bottom: 0;
-		transform-origin: right bottom;
-		$s2-rotate: 25deg;
-		&-R {
-			left: 50%;
-			transform-origin: left bottom;
-			transform: rotate($s2-rotate);
-		}
-		&-L {
-			right: 50%;
-			transform: rotate(-$s2-rotate);
-		}
-	}
+	// &-closer {
+	// 	width: 50vw;
+	// 	height: calc(100% + 200vh);
+	// 	background-color: $blue;
+	// 	position: absolute;
+	// 	z-index: 0;
+	// 	bottom: 0;
+	// 	transform-origin: right bottom;
+	// 	$s2-rotate: 25deg;
+	// 	&-R {
+	// 		left: 50%;
+	// 		transform-origin: left bottom;
+	// 		transform: rotate($s2-rotate);
+	// 	}
+	// 	&-L {
+	// 		right: 50%;
+	// 		transform: rotate(-$s2-rotate);
+	// 	}
+	// }
 }
 .s3 {
 	width: 100%;
+	background-color: white;
+	color: black;
 	&__con {
-		background-color: red;
-		text-align: center;
 		padding-bottom: 1rem;
 		display: inline-block;
 		width: 80%;
-		@include sec-background-color;
 		&-title {
 			text-transform: uppercase;
 			font-size: $heading_size;

@@ -32,6 +32,18 @@ html {
     html {
       font-size: 12.5px; } }
 
+/*
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
 .header {
   width: 100vw;
   z-index: 500;
@@ -43,14 +55,29 @@ html {
   left: 0; }
   .header .container {
     position: relative;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    align-items: center; }
 
 .head a {
   color: white; }
 
 .head-logo {
   font-size: 3rem;
-  display: inline-block; }
+  display: inline-block;
+  margin: auto 0; }
+  .head-logo-con {
+    display: flex;
+    flex-direction: row; }
+  .head-logo-2 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-family: "Quatro sans";
+    letter-spacing: .25rem;
+    margin: auto auto;
+    text-align: center; }
+    .head-logo-2-two {
+      position: relative; }
   .head-logo-son {
     height: 3rem; }
   .head-logo-text {
@@ -137,60 +164,45 @@ body {
     width: 100%;
     font-size: 3rem; }
 
-.s2__con {
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1rem;
-  height: 25rem;
-  min-height: fit-content;
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.1); }
-  .s2__con-text {
-    padding: 0.25rem;
-    flex: 1 0 250px; }
-    .s2__con-text--title {
-      width: 80%;
-      font-size: 3rem;
-      line-height: 1em;
-      display: block;
-      text-transform: uppercase; }
-    .s2__con-text--body {
-      font-size: 1.75rem;
-      text-align: justify;
-      line-height: 1em;
-      display: block; }
-  .s2__con-gallery {
-    background-image: url("images/thumbnail.png");
-    flex: 1 0 250px;
-    min-height: 100%; }
-
-.s2-closer {
-  width: 50vw;
-  height: calc(100% + 200vh);
-  background-color: #52adf3;
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  transform-origin: right bottom; }
-  .s2-closer-R {
-    left: 50%;
-    transform-origin: left bottom;
-    transform: rotate(25deg); }
-  .s2-closer-L {
-    right: 50%;
-    transform: rotate(-25deg); }
+.s2 {
+  background-image: linear-gradient(#001e44, #57aef1, #57aef1, #57aef1); }
+  .s2__con {
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: 25rem;
+    min-height: fit-content;
+    width: 80%;
+    color: white; }
+    .s2__con-text {
+      padding: 0.25rem;
+      flex: 1 0 250px; }
+      .s2__con-text--title {
+        width: 80%;
+        font-size: 3rem;
+        line-height: 1em;
+        display: block;
+        text-transform: uppercase; }
+      .s2__con-text--body {
+        font-size: 1.75rem;
+        text-align: justify;
+        line-height: 1em;
+        display: block; }
+    .s2__con-gallery {
+      background-image: url("images/thumbnail.png");
+      flex: 1 0 250px;
+      min-height: 100%; }
 
 .s3 {
-  width: 100%; }
+  width: 100%;
+  background-color: white;
+  color: black; }
   .s3__con {
-    background-color: red;
-    text-align: center;
     padding-bottom: 1rem;
     display: inline-block;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.1); }
+    width: 80%; }
     .s3__con-title {
       text-transform: uppercase;
       font-size: 3rem;
@@ -302,46 +314,21 @@ body {
     height: 100%;
     width: 100%; }
 
+#snowflakeContainer {
+  transform: translateX(-50%);
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 100%;
+  height: 200%;
+  position: absolute; }
+
 .snowflake {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  font-size: 3rem;
-  z-index: 200;
-  color: #57aef1; }
-  .snowflakes {
-    list-style: none;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0; }
-    .snowflakes-son {
-      width: fit-content;
-      height: fit-content;
-      position: absolute;
-      opacity: 0.5; }
-      .snowflakes-son:nth-child(4n) {
-        top: 75%; }
-      .snowflakes-son:nth-child(4n + 1) {
-        top: 55%; }
-      .snowflakes-son:nth-child(4n + 2) {
-        top: 30%; }
-      .snowflakes-son:nth-child(4n + 3) {
-        top: 10%; }
-      .snowflakes-son > i {
-        animation: ani-rotate 2s infinite; }
-      .snowflakes-son.one {
-        left: 10%; }
-      .snowflakes-son.two {
-        left: 33%; }
-      .snowflakes-son.three {
-        right: 33%; }
-      .snowflakes-son.four {
-        right: 10%; }
-
-@keyframes ani-rotate {
-  from {
-    transform: rotateY(0); }
-  to {
-    transform: rotateY(360deg); } }
+  background-color: #ccc;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px; }

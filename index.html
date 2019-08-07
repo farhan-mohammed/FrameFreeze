@@ -14,7 +14,17 @@
 <body>
     <header class='header'>
         <div class="container">
-            <div class="head-logo"><a href="#"><img src="images/thumbnail.png" alt="" class="head-logo-son"></a></div>
+            <div class="head-logo">
+                <a href="#">
+                    <div class="head-logo-con">
+                        <img src="images/thumbnail.png" alt="" class="head-logo-son">
+                        <div class="head-logo-2">
+                            <div class="head-logo-2-one">FREEZE</div>
+                            <div class="head-logo-2-two">FRAME</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
             <nav class="head-nav">
               <ul class="head-ul">
                 <li class="head-ul-li"><a href="#" class="head-ul-a">About</a></li>
@@ -41,26 +51,6 @@
                     </div>
                     <span class="s1-slogan">The game starts here</span>
                 </div>
-                <div class="snowflake rellax"  data-rellax-speed="-9">
-                    <ul class="snowflakes">
-                        <li class="snowflakes-son  one"><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son  one" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son one" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son one" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son two" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son two" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son two" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son two" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son three" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son three" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son three" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son three" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son four" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son four" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son four" ><i class="far fa-snowflake"></i></li>
-                        <li class="snowflakes-son four" ><i class="far fa-snowflake"></i></li>
-                    </ul>
-                </div>
             </div>
             <div class="layout-sec s2">
                 <div class="s2__con">
@@ -75,6 +65,9 @@
                     <div class="s2__con-gallery">
                        
                     </div>
+                </div>
+                <div id="snowflakeContainer">
+                    <span class="snowflake"></span>
                 </div>
                 <!-- <div class="s2-closer s2-closer-L">
 
@@ -172,6 +165,7 @@
             <h1 class="foot-text">#FF@Toronto</h1>
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/5f7589a778.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
     <script>var rellax = new Rellax('.rellax');
@@ -186,5 +180,6 @@
     
     <script src="app.js"></script>
     <script src="scrollMagic.js"></script>
+    <script src="js/snowflake.js"></script>
 </body>
 </html>
