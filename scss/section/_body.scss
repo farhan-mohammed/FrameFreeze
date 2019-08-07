@@ -63,7 +63,8 @@ body {
 	}
 }
 .s2 {
-	background-image: linear-gradient($dark-back, #57aef1, #57aef1, #57aef1);
+	// background-image: linear-gradient($dark-back, darken(#57aef1, 1), #57aef1, #57aef1);
+	background-color: darken($color: #57aef1, $amount: 10);
 	&__con {
 		z-index: 10;
 		display: flex;
@@ -138,6 +139,7 @@ body {
 	}
 }
 .s4 {
+	background-color: white;
 	&__con {
 		background-color: #1235;
 		width: 70%;
@@ -146,6 +148,7 @@ body {
 	}
 }
 .s5 {
+	background-color: white;
 	&__con {
 		@include sec-background-color;
 		width: 70%;
@@ -184,7 +187,9 @@ body {
 	}
 }
 .s6 {
+	background-color: white;
 }
 .s7 {
+	background-color: white;
 }
 /**/

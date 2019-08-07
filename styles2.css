@@ -165,7 +165,7 @@ body {
     font-size: 3rem; }
 
 .s2 {
-  background-image: linear-gradient(#001e44, #57aef1, #57aef1, #57aef1); }
+  background-color: #2897ed; }
   .s2__con {
     z-index: 10;
     display: flex;
@@ -212,39 +212,49 @@ body {
       margin: 0 auto;
       display: block; }
 
-.s4__con {
-  background-color: #1235;
-  width: 70%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.1); }
-
-.s5__con {
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 70%;
-  padding: 2rem; }
-  .s5__con-title {
+.s4 {
+  background-color: white; }
+  .s4__con {
+    background-color: #1235;
+    width: 70%;
     text-align: center;
-    display: block;
-    font-size: 3rem; }
-  .s5__con-list {
-    padding: 0 10rem;
-    list-style: none;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .s5__con-list--item {
-      height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.s5 {
+  background-color: white; }
+  .s5__con {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 2rem; }
+    .s5__con-title {
+      text-align: center;
       display: block;
-      margin: auto 2rem; }
-    .s5__con-list--img {
-      object-fit: contain; }
-    .s5__con-list .sponsor-bg {
-      max-height: 7rem; }
-    .s5__con-list .sponsor-md {
-      max-height: 4rem; }
-    .s5__con-list .sponsor-sm {
-      max-height: 2em; }
+      font-size: 3rem; }
+    .s5__con-list {
+      padding: 0 10rem;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .s5__con-list--item {
+        height: fit-content;
+        display: block;
+        margin: auto 2rem; }
+      .s5__con-list--img {
+        object-fit: contain; }
+      .s5__con-list .sponsor-bg {
+        max-height: 7rem; }
+      .s5__con-list .sponsor-md {
+        max-height: 4rem; }
+      .s5__con-list .sponsor-sm {
+        max-height: 2em; }
+
+.s6 {
+  background-color: white; }
+
+.s7 {
+  background-color: white; }
 
 /**/
 .info {
