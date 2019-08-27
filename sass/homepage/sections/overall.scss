@@ -1,0 +1,36 @@
+.body {
+	background-color: orange;
+	width: 100vw;
+	height: fit-content;
+	&-child {
+		min-height: 100vh;
+		background-color: purple;
+	}
+}
+.sec {
+	&tion {
+		@include container-mixin;
+		height: 100vh;
+	}
+	&-1 {
+		background-color: orange;
+	}
+	&-2 {
+		background-color: red;
+	}
+	&-3 {
+		background-color: blue;
+	}
+	&-4 {
+		background-color: green;
+	}
+	&-5 {
+		background-color: teal;
+	}
+	&-6 {
+		background-color: salmon;
+	}
+	&-7 {
+		background-color: saddlebrown;
+	}
+}

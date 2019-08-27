@@ -1,0 +1,16 @@
+.test {
+	height: 0;
+}
+@mixin container-mixin {
+	width: 100%;
+	margin: 0 auto;
+	@media (min-width: $breakpoint-tablet) {
+		width: 723px;
+	}
+	@media (min-width: $breakpoint-small-pc) {
+		width: 933px;
+	}
+	@media (min-width: $breakpoint-large-pc) {
+		width: 1127px;
+	}
+}

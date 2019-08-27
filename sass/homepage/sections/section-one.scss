@@ -1,0 +1,67 @@
+.intro {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 100%;
+	padding-top: 10vh;
+	&-img {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 180%;
+		height: auto;
+		@media (min-width: 600px) {
+			height: 150%;
+			width: auto;
+			bottom: 0;
+		}
+		@media (min-width: $breakpoint-small-pc) {
+		}
+		@media (min-width: $breakpoint-large-pc) {
+		}
+		&-background {
+			z-index: 0;
+
+			@media (min-width: $breakpoint-tablet) {
+			}
+			@media (min-width: $breakpoint-small-pc) {
+			}
+			@media (min-width: $breakpoint-large-pc) {
+			}
+		}
+		&-1 {
+			z-index: 5;
+			transform: translateX(-60%);
+		}
+		&-2 {
+			z-index: 10;
+			@media (min-width: $breakpoint-tablet) {
+			}
+			@media (min-width: $breakpoint-small-pc) {
+			}
+			@media (min-width: $breakpoint-large-pc) {
+			}
+		}
+		&-3 {
+			z-index: 15;
+			@media (min-width: $breakpoint-tablet) {
+			}
+			@media (min-width: $breakpoint-small-pc) {
+			}
+			@media (min-width: $breakpoint-large-pc) {
+			}
+		}
+		&-glare {
+			z-index: 6;
+			@media (min-width: $breakpoint-tablet) {
+			}
+			@media (min-width: $breakpoint-small-pc) {
+			}
+			@media (min-width: $breakpoint-large-pc) {
+			}
+		}
+	}
+}
