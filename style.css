@@ -114,3 +114,11 @@ body {
 
 .sec-7 {
   background-color: saddlebrown; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+body {
+  position: relative;
+  width: 100vw; }
