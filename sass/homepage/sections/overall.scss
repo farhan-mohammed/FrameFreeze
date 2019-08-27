@@ -13,6 +13,7 @@
 		height: 100vh;
 	}
 	&-1 {
+		position: relative;
 		background-color: orange;
 	}
 	&-2 {
@@ -41,5 +42,4 @@ body {
 }
 body {
 	position: relative;
-	width: 100vw;
 }

@@ -95,6 +95,7 @@ body {
       width: 1127px; } }
 
 .sec-1 {
+  position: relative;
   background-color: orange; }
 
 .sec-2 {
@@ -120,5 +121,4 @@ body {
   overflow-x: hidden; }
 
 body {
-  position: relative;
-  width: 100vw; }
+  position: relative; }
