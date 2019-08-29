@@ -1,38 +1,58 @@
 .body {
-	background-color: orange;
 	width: 100vw;
-	height: fit-content;
-	&-child {
-		min-height: 100vh;
-		background-color: purple;
-	}
 }
 .sec {
+	&-light {
+		color: $color-main;
+		background-color: #fff;
+	}
 	&tion {
-		@include container-mixin;
-		height: 100vh;
+		min-height: 100vh;
+		position: relative;
+		color: #fff;
+		transition: background .3s;
+		&-body {
+			@include container-mixin;
+		}
+		&-background {
+			background-color: $color-main;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -200;
+		}
 	}
 	&-1 {
-		position: relative;
 		background-color: orange;
 	}
 	&-2 {
-		background-color: red;
+		&-background {
+		}
 	}
 	&-3 {
-		background-color: blue;
+		&-rough {
+			width: 100vw;
+			height: 100vh;
+		}
 	}
 	&-4 {
-		background-color: green;
 	}
 	&-5 {
-		background-color: teal;
+		&-body {
+			padding: 15rem 0;
+			font-size: 2rem;
+			height: fit-content;
+		}
+		&-background {
+			background-color: $color-main;
+		}
 	}
 	&-6 {
-		background-color: salmon;
 	}
 	&-7 {
-		background-color: saddlebrown;
+		height: 50vh;
 	}
 }
 

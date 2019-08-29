@@ -6,6 +6,19 @@
 	height: 100%;
 	width: 100%;
 	padding-top: 10vh;
+	&-bg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		&-1 {
+			background-image: radial-gradient(ellipse at bottom center, #072654, $color-main);
+		}
+		&-2 {
+			background-image: radial-gradient(ellipse at bottom center, #05e3e215, transparent);
+		}
+	}
 	&-img {
 		position: absolute;
 		bottom: 10%;

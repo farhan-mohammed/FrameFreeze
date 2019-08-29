@@ -48,6 +48,16 @@ body {
   height: 100%;
   width: 100%;
   padding-top: 10vh; }
+  .intro-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+    .intro-bg-1 {
+      background-image: radial-gradient(ellipse at bottom center, #072654, #010e1b); }
+    .intro-bg-2 {
+      background-image: radial-gradient(ellipse at bottom center, #05e3e215, transparent); }
   .intro-img {
     position: absolute;
     bottom: 10%;
@@ -73,48 +83,55 @@ body {
       z-index: 6; }
 
 .body {
-  background-color: orange;
-  width: 100vw;
-  height: fit-content; }
-  .body-child {
-    min-height: 100vh;
-    background-color: purple; }
+  width: 100vw; }
+
+.sec-light {
+  color: #010e1b;
+  background-color: #fff; }
 
 .section {
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh; }
-  @media (min-width: 768px) {
-    .section {
-      width: 723px; } }
-  @media (min-width: 992px) {
-    .section {
-      width: 933px; } }
-  @media (min-width: 1200px) {
-    .section {
-      width: 1127px; } }
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  transition: background .3s; }
+  .section-body {
+    width: 100%;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .section-body {
+        width: 723px; } }
+    @media (min-width: 992px) {
+      .section-body {
+        width: 933px; } }
+    @media (min-width: 1200px) {
+      .section-body {
+        width: 1127px; } }
+  .section-background {
+    background-color: #010e1b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -200; }
 
 .sec-1 {
-  position: relative;
   background-color: orange; }
 
-.sec-2 {
-  background-color: red; }
+.sec-3-rough {
+  width: 100vw;
+  height: 100vh; }
 
-.sec-3 {
-  background-color: blue; }
+.sec-5-body {
+  padding: 15rem 0;
+  font-size: 2rem;
+  height: fit-content; }
 
-.sec-4 {
-  background-color: green; }
-
-.sec-5 {
-  background-color: teal; }
-
-.sec-6 {
-  background-color: salmon; }
+.sec-5-background {
+  background-color: #010e1b; }
 
 .sec-7 {
-  background-color: saddlebrown; }
+  height: 50vh; }
 
 html,
 body {
