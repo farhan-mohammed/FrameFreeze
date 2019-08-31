@@ -8,8 +8,8 @@ SetVariables = () => {
 	sectionHeights = Array.prototype.map.call(sections, (x) => x.offsetHeight);
 	sumFirstTwo = sectionHeights[0] + sectionHeights[1];
 	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
-	document.getElementById('height').innerText = `h:${window.outerHeight}px`;
-	document.getElementById('width').innerText = `w:${window.outerWidth}px`;
+	document.getElementById('height').innerText = `h:${window.innerHeight}px`;
+	document.getElementById('width').innerText = `w:${window.innerWidth}px`;
 };
 SetVariables();
 

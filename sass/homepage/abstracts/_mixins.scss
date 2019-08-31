@@ -14,3 +14,14 @@
 		width: 1127px;
 	}
 }
+
+@mixin max($x) {
+	@media (max-width: $x) {
+		@content;
+	}
+}
+@mixin min($x) {
+	@media (min-width: $x) {
+		@content;
+	}
+}

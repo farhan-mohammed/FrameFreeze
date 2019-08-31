@@ -1,3 +1,4 @@
+@import "abstracts/mixins";
 * {
 	border: 0;
 	padding: 0;
@@ -6,14 +7,10 @@
 }
 html {
 	font-size: 17px;
-}
-@media (max-width: 900px) {
-	html {
+	@include max (900px) {
 		font-size: 15px;
 	}
-}
-@media (max-width: 400px) {
-	html {
+	@include max (400px) {
 		font-size: 13px;
 	}
 }
@@ -34,7 +31,6 @@ body {
 	left: 300px;
 }
 @import "abstracts/variables";
-@import "abstracts/mixins";
 @import "components/container";
 @import "abstracts/fonts";
 

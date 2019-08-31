@@ -21,24 +21,13 @@
 		transform: translateX(-50%);
 		width: 180%;
 		height: auto;
-		@media (min-width: 600px) {
+		@media (min-aspect-ratio: 1/1) {
 			height: 150%;
 			width: auto;
 			bottom: 0;
 		}
-		@media (min-width: $breakpoint-small-pc) {
-		}
-		@media (min-width: $breakpoint-large-pc) {
-		}
 		&-background {
 			z-index: 0;
-
-			@media (min-width: $breakpoint-tablet) {
-			}
-			@media (min-width: $breakpoint-small-pc) {
-			}
-			@media (min-width: $breakpoint-large-pc) {
-			}
 		}
 		&-1 {
 			z-index: 5;
@@ -46,62 +35,60 @@
 		}
 		&-2 {
 			z-index: 25;
-			@media (min-width: $breakpoint-tablet) {
-			}
-			@media (min-width: $breakpoint-small-pc) {
-			}
-			@media (min-width: $breakpoint-large-pc) {
-			}
 		}
 		&-3 {
 			z-index: 10;
-			@media (min-width: $breakpoint-tablet) {
-			}
-			@media (min-width: $breakpoint-small-pc) {
-			}
-			@media (min-width: $breakpoint-large-pc) {
-			}
 		}
 		&-glare {
 			z-index: 27;
-			@media (min-width: $breakpoint-tablet) {
-			}
-			@media (min-width: $breakpoint-small-pc) {
-			}
-			@media (min-width: $breakpoint-large-pc) {
-			}
 		}
 	}
 }
 
-.sec-1-text {
-	position: fixed;
-	// translateY not 50% as intended
-	transform: translateX(50%);
-	right: 50%;
-	text-align: center;
-	z-index: 12;
-	width: 100%;
-	top: 30%;
-	> div {
-		line-height: 100%;
+.sec-1 {
+	&-buffer {
+		z-index: 1000;
+		width: 100.3vw;
+		height: 10.4vh;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		// To prevent gaps
+		margin: -3px;
+		background-color: $color-primary;
+		@media (min-aspect-ratio: 1/1) {
+			display: none;
+		}
 	}
-	&__title {
-		font-family: "Raleway";
-		font-weight: 900;
-		word-spacing: .5rem;
-		letter-spacing: .4rem;
-		font-size: 5rem;
-		width: auto;
-	}
-	&__date,
-	&__loc {
-		font-size: 2rem;
-		font-weight: 100;
-		font-family: "Montserrat";
-	}
-	&__date {
-	}
-	&__loc {
+	&-text {
+		position: fixed;
+		// translateY not 50% as intended
+		transform: translateX(50%);
+		right: 50%;
+		text-align: center;
+		z-index: 12;
+		width: 100%;
+		top: 20vh;
+		> div {
+			line-height: 100%;
+		}
+		&__title {
+			font-family: "Raleway";
+			font-weight: 900;
+			word-spacing: .5rem;
+			letter-spacing: .4rem;
+			font-size: 5rem;
+			width: auto;
+		}
+		&__date,
+		&__loc {
+			font-size: 2rem;
+			font-weight: 100;
+			font-family: "Montserrat";
+		}
+		&__date {
+		}
+		&__loc {
+		}
 	}
 }

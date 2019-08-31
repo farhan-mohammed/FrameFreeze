@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap");
+.test {
+  height: 0;
+}
+
 * {
   border: 0;
   padding: 0;
@@ -40,10 +44,6 @@ body {
 
 #width {
   left: 300px;
-}
-
-.test {
-  height: 0;
 }
 
 .container {
@@ -94,7 +94,7 @@ body {
 
 #mainNav .logo-img {
   height: 10vh;
-  margin: 1vh 0;
+  margin: 1vh 1rem;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
@@ -116,6 +116,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 800px) {
+  .head-list {
+    display: none;
+  }
 }
 
 .head-item {
@@ -148,6 +154,35 @@ body {
   display: inline-block;
 }
 
+.head-sm {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  float: right;
+}
+
+@media (min-width: 800px) {
+  .head-sm {
+    display: none;
+  }
+}
+
+.ham {
+  margin-right: 1.6rem;
+}
+
+.ham-icon {
+  height: 3rem;
+  width: 3rem;
+  background-color: orange;
+  display: block;
+}
+
 .intro {
   position: absolute;
   bottom: 0;
@@ -177,7 +212,7 @@ body {
   height: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-aspect-ratio: 1 / 1) {
   .intro-img {
     height: 150%;
     width: auto;
@@ -207,6 +242,23 @@ body {
   z-index: 27;
 }
 
+.sec-1-buffer {
+  z-index: 1000;
+  width: 100.3vw;
+  height: 10.4vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: -3px;
+  background-color: #030d19;
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+  .sec-1-buffer {
+    display: none;
+  }
+}
+
 .sec-1-text {
   position: fixed;
   -webkit-transform: translateX(50%);
@@ -215,7 +267,7 @@ body {
   text-align: center;
   z-index: 12;
   width: 100%;
-  top: 30%;
+  top: 20vh;
 }
 
 .sec-1-text > div {
