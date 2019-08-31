@@ -5,6 +5,8 @@ SetVariables = () => {
 	this.sectionFiveHeight = sections[4].offsetHeight;
 	sectionHeight = Array.prototype.map.call(sections, (x) => x.offsetHeight).slice(0, 4);
 	this.changeHeight = sectionHeight.reduce((sum, current) => sum + current);
+	document.getElementById('height').innerText = `h:${window.outerHeight}px`;
+	document.getElementById('width').innerText = `w:${window.outerWidth}px`;
 };
 SetVariables();
 

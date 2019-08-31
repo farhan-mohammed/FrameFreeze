@@ -4,15 +4,40 @@
 	margin: 0;
 	box-sizing: inherit;
 }
+html {
+	font-size: 17px;
+}
+@media (max-width: 900px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (max-width: 400px) {
+	html {
+		font-size: 13px;
+	}
+}
 html,
 body {
 	overflow-x: hidden;
 }
+#height,
+#width {
+	color: red;
+	position: fixed;
+	top: 200px;
+	font-size: 1rem;
+	left: 200px;
+	z-index: 1000;
+}
+#width {
+	left: 300px;
+}
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "components/container";
 @import "abstracts/fonts";
 
 @import "components/header";
-@import "components/container";
-@import "sections/section-one.scss";
+@import "sections/sectionone";
 @import "sections/overall";

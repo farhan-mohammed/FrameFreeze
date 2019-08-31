@@ -1,0 +1,63 @@
+#mainNav {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	// background: #04142a;
+	padding: 0;
+	padding-top: .5rem;
+	left: 0;
+	transition: background .4s;
+	z-index: 1000;
+	> div {
+		padding: 0;
+	}
+	.logo {
+		float: left;
+		&-img {
+			height: 10vh;
+			margin: 1vh 0;
+			transition: height 0.4s;
+		}
+	}
+}
+.head {
+	color: white;
+	float: right;
+	height: 100%;
+	&-list {
+		height: 100%;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+		display: flex;
+	}
+	&-item {
+		margin: auto 0;
+		display: inline-block;
+
+		&-tag {
+			width: 100%;
+			height: 100%;
+			font-size: 1.2rem;
+			margin-right: 20px;
+			font-family: 'Raleway';
+			text-decoration: none;
+			&:hover,
+			&:visited {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#head-contact {
+	border: .1rem solid #fff;
+	padding: .2rem;
+	border-radius: .5rem;
+	box-sizing: border-box;
+	margin: 0;
+	display: inline-block;
+}

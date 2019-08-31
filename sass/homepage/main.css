@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap");
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 17px;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#height,
+#width {
+  color: red;
+  position: fixed;
+  top: 200px;
+  font-size: 1rem;
+  left: 200px;
+  z-index: 1000;
+}
+
+#width {
+  left: 300px;
+}
+
+.test {
+  height: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 723px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 933px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1127px;
+  }
+}
+
+#mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  padding-top: .5rem;
+  left: 0;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+  z-index: 1000;
+}
+
+#mainNav > div {
+  padding: 0;
+}
+
+#mainNav .logo {
+  float: left;
+}
+
+#mainNav .logo-img {
+  height: 10vh;
+  margin: 1vh 0;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+}
+
+.head {
+  color: white;
+  float: right;
+  height: 100%;
+}
+
+.head-list {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.head-item {
+  margin: auto 0;
+  display: inline-block;
+}
+
+.head-item-tag {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  font-family: 'Raleway';
+  text-decoration: none;
+}
+
+.head-item-tag:hover, .head-item-tag:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#head-contact {
+  border: .1rem solid #fff;
+  padding: .2rem;
+  border-radius: .5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+}
+
+.intro {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+.intro-bg-1 {
+  background-image: radial-gradient(ellipse at bottom center, #072654, #030d19);
+}
+
+.intro-bg-2 {
+  background-image: radial-gradient(ellipse at bottom center, #05e3e230, transparent);
+}
+
+.intro-img {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 180%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .intro-img {
+    height: 150%;
+    width: auto;
+    bottom: 0;
+  }
+}
+
+.intro-img-background {
+  z-index: 0;
+}
+
+.intro-img-1 {
+  z-index: 5;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+
+.intro-img-2 {
+  z-index: 25;
+}
+
+.intro-img-3 {
+  z-index: 10;
+}
+
+.intro-img-glare {
+  z-index: 27;
+}
+
+.sec-1-text {
+  position: fixed;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  right: 50%;
+  text-align: center;
+  z-index: 12;
+  width: 100%;
+  top: 30%;
+}
+
+.sec-1-text > div {
+  line-height: 100%;
+}
+
+.sec-1-text__title {
+  font-family: "Raleway";
+  font-weight: 900;
+  word-spacing: .5rem;
+  letter-spacing: .4rem;
+  font-size: 5rem;
+  width: auto;
+}
+
+.sec-1-text__date, .sec-1-text__loc {
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Montserrat";
+}
+
+.body {
+  width: 100vw;
+}
+
+.sec-light {
+  color: #010e1b;
+  background-color: #fff;
+}
+
+.section {
+  min-height: 100vh;
+  position: relative;
+  color: #fff;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.section-body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .section-body {
+    width: 723px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-body {
+    width: 933px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-body {
+    width: 1127px;
+  }
+}
+
+.section-background {
+  background-color: #030d19;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -200;
+}
+
+.sec-1 {
+  z-index: 1;
+}
+
+.sec-2 {
+  z-index: 2;
+}
+
+.sec-3 {
+  z-index: 3;
+}
+
+.sec-3-rough {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec-4 {
+  z-index: 4;
+}
+
+.sec-5 {
+  z-index: 5;
+}
+
+.sec-5-body {
+  padding: 15rem 0;
+  font-size: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sec-5-background {
+  background-color: #010e1b;
+}
+
+.sec-6 {
+  z-index: 6;
+}
+
+.sec-7 {
+  z-index: 7;
+  height: 50vh;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */

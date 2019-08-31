@@ -7,16 +7,11 @@
 	width: 100%;
 	padding-top: 10vh;
 	&-bg {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
 		&-1 {
-			background-image: radial-gradient(ellipse at bottom center, #072654, $color-main);
+			background-image: radial-gradient(ellipse at bottom center, #072654, $color-primary);
 		}
 		&-2 {
-			background-image: radial-gradient(ellipse at bottom center, #05e3e215, transparent);
+			background-image: radial-gradient(ellipse at bottom center, #05e3e230, transparent);
 		}
 	}
 	&-img {
@@ -50,7 +45,7 @@
 			transform: translateX(-60%);
 		}
 		&-2 {
-			z-index: 10;
+			z-index: 25;
 			@media (min-width: $breakpoint-tablet) {
 			}
 			@media (min-width: $breakpoint-small-pc) {
@@ -59,7 +54,7 @@
 			}
 		}
 		&-3 {
-			z-index: 15;
+			z-index: 10;
 			@media (min-width: $breakpoint-tablet) {
 			}
 			@media (min-width: $breakpoint-small-pc) {
@@ -68,7 +63,7 @@
 			}
 		}
 		&-glare {
-			z-index: 6;
+			z-index: 27;
 			@media (min-width: $breakpoint-tablet) {
 			}
 			@media (min-width: $breakpoint-small-pc) {
@@ -76,5 +71,37 @@
 			@media (min-width: $breakpoint-large-pc) {
 			}
 		}
+	}
+}
+
+.sec-1-text {
+	position: fixed;
+	// translateY not 50% as intended
+	transform: translateX(50%);
+	right: 50%;
+	text-align: center;
+	z-index: 12;
+	width: 100%;
+	top: 30%;
+	> div {
+		line-height: 100%;
+	}
+	&__title {
+		font-family: "Raleway";
+		font-weight: 900;
+		word-spacing: .5rem;
+		letter-spacing: .4rem;
+		font-size: 5rem;
+		width: auto;
+	}
+	&__date,
+	&__loc {
+		font-size: 2rem;
+		font-weight: 100;
+		font-family: "Montserrat";
+	}
+	&__date {
+	}
+	&__loc {
 	}
 }
