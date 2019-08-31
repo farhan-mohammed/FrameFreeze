@@ -1,10 +1,13 @@
-sectionFiveHeight = 0;
+// 7 Sections
+sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
+sumFirstTwo = 0;
 changeHeight = 0;
+secOneTextVisible = true;
 SetVariables = () => {
 	sections = document.getElementsByClassName('section');
-	this.sectionFiveHeight = sections[4].offsetHeight;
-	sectionHeight = Array.prototype.map.call(sections, (x) => x.offsetHeight).slice(0, 4);
-	this.changeHeight = sectionHeight.reduce((sum, current) => sum + current);
+	sectionHeights = Array.prototype.map.call(sections, (x) => x.offsetHeight);
+	sumFirstTwo = sectionHeights[0] + sectionHeights[1];
+	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
 	document.getElementById('height').innerText = `h:${window.outerHeight}px`;
 	document.getElementById('width').innerText = `w:${window.outerWidth}px`;
 };
@@ -26,10 +29,18 @@ window.addEventListener('scroll', () => {
 	// 	removeColor(4);
 	// 	light = false;
 	// }
+	if (window.scrollY > this.sumFirstTwo && this.secOneTextVisible) {
+		this.secOneTextVisible = false;
+		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'hidden';
+	} else if (window.scrollY <= this.sumFirstTwo && !secOneTextVisible) {
+		this.secOneTextVisible = true;
+		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'visible';
+	}
+
 	if (window.scrollY < this.changeHeight) {
 		document.getElementsByClassName(`sec-5`)[0].style.backgroundColor = 'rgba(7, 38, 84, 0)';
 	} else {
-		percentage = (window.scrollY - this.changeHeight) / this.sectionFiveHeight;
+		percentage = (window.scrollY - this.changeHeight) / this.sectionHeights[4];
 		console.log(percentage);
 		/*
             if the scroll bar is between 0 and 10% of the div
