@@ -492,6 +492,40 @@ body {
   font-family: "Montserrat";
 }
 
+.s3-li {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.s3-l1 {
+  z-index: 30;
+}
+
+.s3-l2 {
+  z-index: 10;
+}
+
+.s3-title {
+  top: 27vh;
+  left: 10vw;
+  width: 80vw;
+  position: absolute;
+}
+
+.s3-title-text {
+  font-family: "Raleway";
+  font-size: 5rem;
+  font-weight: 900;
+  word-spacing: .5rem;
+  letter-spacing: .4rem;
+  text-align: center;
+}
+
 .footer-trans {
   width: 150vw;
   bottom: 100%;
@@ -608,8 +642,8 @@ body {
 
 .sec-5 {
   z-index: 5;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color .25s;
+  transition: color .25s;
 }
 
 .sec-5-body {
@@ -622,8 +656,8 @@ body {
 
 .sec-5-background {
   background-color: #010e1b;
-  -webkit-transition: background .5s;
-  transition: background .5s;
+  -webkit-transition: background .25s;
+  transition: background .25s;
 }
 
 .sec-6 {

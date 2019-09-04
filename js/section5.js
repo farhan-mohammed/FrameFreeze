@@ -3,11 +3,15 @@ sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 sumFirstTwo = 0;
 changeHeight = 0;
 secTwoTrigger = true;
+halfScreen = 0;
+secThreeTreshold = 0;
 secOneTextVisible = true;
 SetVariables = () => {
 	sections = document.getElementsByClassName('section');
 	sectionHeights = Array.prototype.map.call(sections, (x) => x.offsetHeight);
 	sumFirstTwo = sectionHeights[0] + sectionHeights[1];
+	halfScreen = window.innerHeight / 2;
+	secThreeTreshold = window.innerHeight * 0.27;
 	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
 	// document.getElementById('height').innerText = `h:${window.innerHeight}px`;
 	// document.getElementById('width').innerText = `w:${window.innerWidth}px`;
@@ -58,6 +62,17 @@ window.addEventListener('scroll', () => {
 		document.getElementById(`mainNav`).style.color = '#000';
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '#fff';
 		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '#fff';
+	}
+	if (window.scrollY + this.halfScreen > this.sumFirstTwo + secThreeTreshold) {
+		document.getElementsByClassName('s3-title')[0].style.top = `${secThreeTreshold}px`;
+	} else if (window.scrollY + this.halfScreen < this.sumFirstTwo) {
+		document.getElementsByClassName('s3-title')[0].style.visibility = 'hidden';
+		document.getElementsByClassName('s3-title')[0].style.top = `0`;
+	} else {
+		document.getElementsByClassName('s3-title')[0].style.visibility = 'visible';
+		document.getElementsByClassName('s3-title')[0].style.top = `${this.halfScreen +
+			window.scrollY -
+			this.sumFirstTwo}px`;
 	}
 });
 // function setColor(x) {

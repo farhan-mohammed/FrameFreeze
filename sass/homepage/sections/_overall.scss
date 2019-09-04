@@ -52,7 +52,7 @@
 	}
 	&-5 {
 		z-index: 5;
-		transition: color .5s;
+		transition: color .25s;
 		&-body {
 			padding: 15rem 0;
 			font-size: 2rem;
@@ -60,7 +60,7 @@
 		}
 		&-background {
 			background-color: $color-main;
-			transition: background .5s;
+			transition: background .25s;
 		}
 	}
 	&-6 {
