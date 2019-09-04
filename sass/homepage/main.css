@@ -100,7 +100,6 @@ body {
 }
 
 .head {
-  color: white;
   float: right;
   height: 100%;
 }
@@ -609,6 +608,8 @@ body {
 
 .sec-5 {
   z-index: 5;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 
 .sec-5-body {
@@ -621,6 +622,8 @@ body {
 
 .sec-5-background {
   background-color: #010e1b;
+  -webkit-transition: background .5s;
+  transition: background .5s;
 }
 
 .sec-6 {

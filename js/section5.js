@@ -2,7 +2,7 @@
 sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 sumFirstTwo = 0;
 changeHeight = 0;
-secTwoTrigger=true;
+secTwoTrigger = true;
 secOneTextVisible = true;
 SetVariables = () => {
 	sections = document.getElementsByClassName('section');
@@ -31,13 +31,12 @@ window.addEventListener('scroll', () => {
 	// 	light = false;
 	// }
 	// Make this more effienct
-	if (secTwoTrigger&&window.scrollY>this.sectionHeights[0]*0.75){
-			// document.getElementsByClassName("s2-body")[0].style.backgroundColor="orange";
-			// secTwoTrigger=false;
-			document.getElementsByClassName("s2-body__text-title")[0].classList.add("s2anim-body__text-title");
-			document.getElementsByClassName("s2-body__text-body")[0].classList.add("s2anim-body__text-body");
+	if (secTwoTrigger && window.scrollY > this.sectionHeights[0] * 0.75) {
+		// document.getElementsByClassName("s2-body")[0].style.backgroundColor="orange";
+		// secTwoTrigger=false;
+		document.getElementsByClassName('s2-body__text-title')[0].classList.add('s2anim-body__text-title');
+		document.getElementsByClassName('s2-body__text-body')[0].classList.add('s2anim-body__text-body');
 	}
-	
 
 	if (window.scrollY > this.sumFirstTwo && this.secOneTextVisible) {
 		this.secOneTextVisible = false;
@@ -48,19 +47,17 @@ window.addEventListener('scroll', () => {
 	}
 
 	if (window.scrollY < this.changeHeight) {
-		document.getElementsByClassName(`sec-5`)[0].style.backgroundColor = 'rgba(7, 38, 84, 0)';
+		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '';
+		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '';
+		document.getElementsByClassName(`sec-5`)[0].style.color = '#fff';
+		document.getElementById(`mainNav`).style.color = '#fff';
+		document.getElementById('head-contact').style.borderColor = '#fff';
 	} else {
-		percentage = (window.scrollY - this.changeHeight) / this.sectionHeights[4];
-		console.log(percentage);
-		/*
-            if the scroll bar is between 0 and 10% of the div
-                then the gradient will get softer to reveal the true color
-            if its past
-                set to true color
-        */
-		document.getElementsByClassName(`sec-5`)[0].style.backgroundColor = `rgba(7, 38, 84, ${percentage < 0.1
-			? percentage * 10
-			: 1})`;
+		document.getElementsByClassName(`sec-5`)[0].style.color = '#000';
+		document.getElementById('head-contact').style.borderColor = '#000';
+		document.getElementById(`mainNav`).style.color = '#000';
+		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '#fff';
+		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '#fff';
 	}
 });
 // function setColor(x) {
