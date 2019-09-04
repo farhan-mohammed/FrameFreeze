@@ -2,14 +2,15 @@
 sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 sumFirstTwo = 0;
 changeHeight = 0;
+secTwoTrigger=true;
 secOneTextVisible = true;
 SetVariables = () => {
 	sections = document.getElementsByClassName('section');
 	sectionHeights = Array.prototype.map.call(sections, (x) => x.offsetHeight);
 	sumFirstTwo = sectionHeights[0] + sectionHeights[1];
 	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
-	document.getElementById('height').innerText = `h:${window.innerHeight}px`;
-	document.getElementById('width').innerText = `w:${window.innerWidth}px`;
+	// document.getElementById('height').innerText = `h:${window.innerHeight}px`;
+	// document.getElementById('width').innerText = `w:${window.innerWidth}px`;
 };
 SetVariables();
 
@@ -29,6 +30,15 @@ window.addEventListener('scroll', () => {
 	// 	removeColor(4);
 	// 	light = false;
 	// }
+	// Make this more effienct
+	if (secTwoTrigger&&window.scrollY>this.sectionHeights[0]*0.75){
+			// document.getElementsByClassName("s2-body")[0].style.backgroundColor="orange";
+			// secTwoTrigger=false;
+			document.getElementsByClassName("s2-body__text-title")[0].classList.add("s2anim-body__text-title");
+			document.getElementsByClassName("s2-body__text-body")[0].classList.add("s2anim-body__text-body");
+	}
+	
+
 	if (window.scrollY > this.sumFirstTwo && this.secOneTextVisible) {
 		this.secOneTextVisible = false;
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'hidden';

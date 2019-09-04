@@ -29,6 +29,14 @@
 	}
 	&-2 {
 		z-index: 2;
+		position: relative;
+		&-body{
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			@include container-mixin;
+		}
 		&-background {
 		}
 	}
@@ -55,6 +63,10 @@
 	}
 	&-6 {
 		z-index: 6;
+		padding-bottom: 33.84vw;
+		&-background{
+			background-color: $color-light;
+		}
 	}
 	&-7 {
 		z-index: 7;
