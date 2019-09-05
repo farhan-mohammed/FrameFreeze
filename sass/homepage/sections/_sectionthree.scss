@@ -17,13 +17,14 @@
 		}
 	}
 	&-title {
-		top: 27vh;
+		top: 20vh;
 		left: 10vw;
 		width: 80vw;
-		position: absolute;
+		position: fixed;
 		&-text {
 			font-family: "Raleway";
 			font-size: 5rem;
+			line-height: 100%;
 			font-weight: 900;
 			word-spacing: .5rem;
 			letter-spacing: .4rem;

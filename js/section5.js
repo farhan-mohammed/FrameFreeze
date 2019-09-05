@@ -41,15 +41,26 @@ window.addEventListener('scroll', () => {
 		document.getElementsByClassName('s2-body__text-title')[0].classList.add('s2anim-body__text-title');
 		document.getElementsByClassName('s2-body__text-body')[0].classList.add('s2anim-body__text-body');
 	}
-
+	if (window.scrollY<this.sectionHeights[0]){
+		document.getElementsByClassName('s3-title')[0].style.visibility = 'hidden';
+	}else{
+		document.getElementsByClassName('s3-title')[0].style.visibility = 'visible';
+	}
 	if (window.scrollY > this.sumFirstTwo && this.secOneTextVisible) {
 		this.secOneTextVisible = false;
+		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'hidden';
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'hidden';
 	} else if (window.scrollY <= this.sumFirstTwo && !secOneTextVisible) {
 		this.secOneTextVisible = true;
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'visible';
 	}
+	if (window.scrollY>this.sumFirstTwo){
+		document.getElementsByClassName('s3-title')[0].style.position = 'absolute';
+		
+	} else{
+		document.getElementsByClassName('s3-title')[0].style.position = 'fixed';
 
+	}
 	if (window.scrollY < this.changeHeight) {
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '';
 		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '';
@@ -63,17 +74,17 @@ window.addEventListener('scroll', () => {
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '#fff';
 		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '#fff';
 	}
-	if (window.scrollY + this.halfScreen > this.sumFirstTwo + secThreeTreshold) {
-		document.getElementsByClassName('s3-title')[0].style.top = `${secThreeTreshold}px`;
-	} else if (window.scrollY + this.halfScreen < this.sumFirstTwo) {
-		document.getElementsByClassName('s3-title')[0].style.visibility = 'hidden';
-		document.getElementsByClassName('s3-title')[0].style.top = `0`;
-	} else {
-		document.getElementsByClassName('s3-title')[0].style.visibility = 'visible';
-		document.getElementsByClassName('s3-title')[0].style.top = `${this.halfScreen +
-			window.scrollY -
-			this.sumFirstTwo}px`;
-	}
+	// if (window.scrollY + this.halfScreen > this.sumFirstTwo + secThreeTreshold) {
+	// 	document.getElementsByClassName('s3-title')[0].style.top = `${secThreeTreshold}px`;
+	// } else if (window.scrollY + this.halfScreen < this.sumFirstTwo) {
+	// 	document.getElementsByClassName('s3-title')[0].style.visibility = 'hidden';
+	// 	document.getElementsByClassName('s3-title')[0].style.top = `0`;
+	// } else {
+	// 	document.getElementsByClassName('s3-title')[0].style.visibility = 'visible';
+	// 	document.getElementsByClassName('s3-title')[0].style.top = `${this.halfScreen +
+	// 		window.scrollY -
+	// 		this.sumFirstTwo}px`;
+	// }
 });
 // function setColor(x) {
 // 	document.getElementsByClassName(`sec-${x}`)[0].style.color = '#fff';
