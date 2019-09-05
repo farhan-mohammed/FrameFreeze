@@ -77,9 +77,12 @@
 }
 .ham {
 	margin-right: 1.6rem;
+	padding: 5px;
+	background-color: red;
 	&-icon {
 		height: 3rem;
 		width: 3rem;
+		border: solid white 3px;
 		background-color: orange;
 
 		display: block;

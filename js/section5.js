@@ -12,6 +12,8 @@ SetVariables = () => {
 	sumFirstTwo = sectionHeights[0] + sectionHeights[1];
 	halfScreen = window.innerHeight / 2;
 	secThreeTreshold = window.innerHeight * 0.27;
+	y = document.getElementsByClassName('footer-trans-img')[0].clientHeight * (65 / 319);
+	document.getElementsByClassName('footer-trans-table')[0].style.height = `${y}px`;
 	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
 	// document.getElementById('height').innerText = `h:${window.innerHeight}px`;
 	// document.getElementById('width').innerText = `w:${window.innerWidth}px`;
@@ -41,9 +43,9 @@ window.addEventListener('scroll', () => {
 		document.getElementsByClassName('s2-body__text-title')[0].classList.add('s2anim-body__text-title');
 		document.getElementsByClassName('s2-body__text-body')[0].classList.add('s2anim-body__text-body');
 	}
-	if (window.scrollY<this.sectionHeights[0]){
+	if (window.scrollY < this.sectionHeights[0]) {
 		document.getElementsByClassName('s3-title')[0].style.visibility = 'hidden';
-	}else{
+	} else {
 		document.getElementsByClassName('s3-title')[0].style.visibility = 'visible';
 	}
 	if (window.scrollY > this.sumFirstTwo && this.secOneTextVisible) {
@@ -54,12 +56,10 @@ window.addEventListener('scroll', () => {
 		this.secOneTextVisible = true;
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'visible';
 	}
-	if (window.scrollY>this.sumFirstTwo){
+	if (window.scrollY > this.sumFirstTwo) {
 		document.getElementsByClassName('s3-title')[0].style.position = 'absolute';
-		
-	} else{
+	} else {
 		document.getElementsByClassName('s3-title')[0].style.position = 'fixed';
-
 	}
 	if (window.scrollY < this.changeHeight) {
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '';
@@ -95,3 +95,13 @@ window.addEventListener('scroll', () => {
 // 	document.getElementsByClassName(`sec-${x}`)[0].style.backgroundColor = '';
 // }
 window.addEventListener('resize', SetVariables);
+
+// setInterval(() => {
+// 	t = document.getElementsByClassName('fc-li');
+// 	x = Array.prototype.map.call(t, (p) => p.style);
+// 	console.log(x);
+// 	for (i = 0; i < x.length; i++) {
+// 		document.getElementsByClassName('fc-li')[i].style.right = `${x[i] + 1}`;
+// 	}
+// 	console.log('hi');
+// }, 500);
