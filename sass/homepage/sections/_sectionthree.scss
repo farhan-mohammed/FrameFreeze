@@ -1,12 +1,15 @@
 .s3 {
 	&-l {
+		@include container-mixin;
+		position: relative;
+		height: 100vh;
 		&i {
 			position: absolute;
 			top: 0;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 100%;
-			height: 100%;
+			width: 152%;
+			height: 90%;
 		}
 
 		&1 {

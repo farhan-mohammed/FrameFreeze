@@ -38,6 +38,9 @@
 		}
 		&-3 {
 			z-index: 10;
+			&:first-child{
+				z-index:9;
+			}
 		}
 		&-glare {
 			z-index: 27;
