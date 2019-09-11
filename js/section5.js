@@ -7,6 +7,7 @@ secThreeTrigger = true;
 halfScreen = 0;
 secThreeTreshold = 0;
 secOneTextVisible = true;
+iconWidth = 80 + 40;
 SetVariables = () => {
 	sections = document.getElementsByClassName('section');
 	sectionHeights = Array.prototype.map.call(sections, (x) => x.offsetHeight);
@@ -16,6 +17,21 @@ SetVariables = () => {
 	y = document.getElementsByClassName('footer-trans-img')[0].clientHeight * (65 / 319);
 	document.getElementsByClassName('footer-trans-table')[0].style.height = `${y}px`;
 	changeHeight = sectionHeights.slice(0, 4).reduce((sum, current) => sum + current);
+	people = document.getElementsByClassName('fc-li');
+	poeplepos = Array.prototype.map.call(people, (x) => x);
+	for (i = 0; i < poeplepos.length; i++) {
+		document.getElementsByClassName('fc-li')[i].style.left = `${this.iconWidth * i}px`;
+	}
+	document.getElementsByClassName('foot-credit')[0].style.width = '';
+
+	if (document.getElementsByClassName('foot-credit')[0].clientWidth > poeplepos.length * this.iconWidth) {
+		document.getElementsByClassName('foot-credit')[0].style.width = poeplepos.length * this.iconWidth + 'px';
+		document.getElementsByClassName('foot-credit')[0].style.visibility = '';
+	}
+	dee = document.getElementsByClassName('foot-credit')[0].clientWidth;
+	rng = parseInt(document.getElementsByClassName('foot-credit')[0].clientWidth) - this.iconWidth * 1.75;
+	document.getElementsByClassName('fc-cover')[1].style.left = `${rng}px`;
+	document.getElementsByClassName('fc-cover')[0].style.right = `${rng}px`;
 	// document.getElementById('height').innerText = `h:${window.innerHeight}px`;
 	// document.getElementById('width').innerText = `w:${window.innerWidth}px`;
 };
@@ -58,30 +74,47 @@ window.addEventListener('scroll', () => {
 		this.secOneTextVisible = true;
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'visible';
 	}
-	if (window.scrollY > this.sumFirstTwo - window.innerHeight * 0.1) {
-		document.getElementsByClassName('s3-l')[0].classList.add('s3-fix');
-		document.getElementsByClassName('s3-top')[0].style.visibility = 'visible';
-	} else if (window.scrollY < this.sumFirstTwo) {
-		document.getElementsByClassName('s3-top')[0].style.visibility = 'hidden';
-		document.getElementsByClassName('s3-l')[0].classList.remove('s3-fix');
-	}
+	console.clear();
+	scroll = window.scrollY;
+	height = window.innerHeight;
+	topthres = height * 0.1;
+
+	//Update the margin of sec-3 if youre changing the %
+	bottomthres = height * 0.27;
+	console.log(`BOTTOMTHRES:${this.sumFirstTwo + bottomthres}`);
+	console.log(`SCROLL:${scroll}`);
+	console.log(``);
 
 	if (
-		window.scrollY > this.sumFirstTwo - window.scrollY * 0.1 &&
-		window.scrollY < this.sumFirstTwo + window.innerHeight * 0.27
+		window.scrollY > this.sumFirstTwo - topthres &&
+		window.scrollY < this.sumFirstTwo + bottomthres + height * 0.15
 	) {
-		document.getElementsByClassName('s3-title')[0].style.top = `${window.scrollY - this.sumFirstTwo}px`;
-	} else if (window.scrollY < this.sumFirstTwo) {
-		document.getElementsByClassName('s3-title')[0].style.top = `-${window.scrollY * 0.1}px`;
+		document.getElementsByClassName('s3-l')[0].classList.add('s3-fix');
+		document.getElementsByClassName('s3-top')[0].style.visibility = 'visible';
+		document.getElementsByClassName('s3-l')[0].style.top = '';
+	} else if (window.scrollY >= this.sumFirstTwo + bottomthres + height * 0.15) {
+		console.log('TRIGGERED');
+		document.getElementsByClassName('s3-l')[0].style.top = `${bottomthres + height * 0.25}px`;
+		document.getElementsByClassName('s3-l')[0].classList.remove('s3-fix');
+	} else if (window.scrollY < this.sumFirstTwo + topthres * 3) {
+		document.getElementsByClassName('s3-top')[0].style.visibility = 'hidden';
+		document.getElementsByClassName('s3-l')[0].classList.remove('s3-fix');
+		document.getElementsByClassName('s3-l')[0].style.top = '';
 	}
+	if (scroll >= this.sumFirstTwo - topthres && scroll <= this.sumFirstTwo + bottomthres) {
+		document.getElementsByClassName('s3-title')[0].style.top = `${scroll - this.sumFirstTwo}px`;
+	} else if (window.scrollY < this.sumFirstTwo - topthres) {
+		document.getElementsByClassName('s3-title')[0].style.top = `-${topthres}px`;
+	} else {
+		document.getElementsByClassName('s3-title')[0].style.top = `${bottomthres}px`;
+	}
+
 	if (secThreeTrigger && window.scrollY > this.sumFirstTwo + window.innerHeight * 0.25) {
 		document.getElementsByClassName('s3-body-')[0].classList.add('s3-body-anim');
 		secThreeTreshold = false;
 	}
-	if (window.scrollY >= this.sumFirstTwo + window.innerHeight * 0.2) {
-		// document.getElementsByClassName('s3-body')[0].classList.add('s3-body-anim');
-	}
-	if (window.scrollY < this.changeHeight) {
+
+	if (window.scrollY < this.changeHeight * 0.95) {
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '';
 		document.getElementsByClassName(`sec-6-background`)[0].style.backgroundColor = '';
 		document.getElementsByClassName(`sec-5`)[0].style.color = '#fff';
@@ -125,3 +158,26 @@ window.addEventListener('resize', SetVariables);
 // 	}
 // 	console.log('hi');
 // }, 500);
+
+setInterval(() => {
+	y = document.getElementsByClassName('fc-li');
+	allPeople = Array.prototype.map.call(y, (x) => x.style.left);
+	wid = document.getElementsByClassName('foot-credit')[0].clientWidth;
+
+	size = allPeople.length;
+
+	for (i = 0; i < allPeople.length; i++) {
+		y = document.getElementsByClassName('fc-li')[i].style.left;
+		if (parseInt(y.substring(0, y.length - 2)) >= this.iconWidth * (allPeople.length - 1)) {
+			document.getElementsByClassName('fc-li')[i].style.left = `0px`;
+			document.getElementsByClassName('fc-li')[i].style.visibility = `hidden`;
+		} else {
+			if (parseInt(y.substring(0, y.length - 2)) == 0) {
+				document.getElementsByClassName('fc-li')[i].style.visibility = ``;
+			}
+			document.getElementsByClassName('fc-li')[i].style.left = `${parseInt(allPeople[i].substring(-2)) +
+				this.iconWidth}px`;
+		}
+	}
+	//Change transition speed if you change the interval
+}, 2000);
