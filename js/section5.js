@@ -3,6 +3,7 @@ sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 sumFirstTwo = 0;
 changeHeight = 0;
 secTwoTrigger = true;
+secThreeTrigger = true;
 halfScreen = 0;
 secThreeTreshold = 0;
 secOneTextVisible = true;
@@ -19,6 +20,7 @@ SetVariables = () => {
 	// document.getElementById('width').innerText = `w:${window.innerWidth}px`;
 };
 SetVariables();
+// Setup
 
 window.addEventListener('scroll', () => {
 	// if (window.scrollY >= this.changeHeight && light == false) {
@@ -39,7 +41,7 @@ window.addEventListener('scroll', () => {
 	// Make this more effienct
 	if (secTwoTrigger && window.scrollY > this.sectionHeights[0] * 0.75) {
 		// document.getElementsByClassName("s2-body")[0].style.backgroundColor="orange";
-		// secTwoTrigger=false;
+		secTwoTrigger = false;
 		document.getElementsByClassName('s2-body__text-title')[0].classList.add('s2anim-body__text-title');
 		document.getElementsByClassName('s2-body__text-body')[0].classList.add('s2anim-body__text-body');
 	}
@@ -56,10 +58,28 @@ window.addEventListener('scroll', () => {
 		this.secOneTextVisible = true;
 		document.getElementsByClassName('sec-1-text')[0].style.visibility = 'visible';
 	}
-	if (window.scrollY > this.sumFirstTwo) {
-		document.getElementsByClassName('s3-title')[0].style.position = 'absolute';
-	} else {
-		document.getElementsByClassName('s3-title')[0].style.position = 'fixed';
+	if (window.scrollY > this.sumFirstTwo - window.innerHeight * 0.1) {
+		document.getElementsByClassName('s3-l')[0].classList.add('s3-fix');
+		document.getElementsByClassName('s3-top')[0].style.visibility = 'visible';
+	} else if (window.scrollY < this.sumFirstTwo) {
+		document.getElementsByClassName('s3-top')[0].style.visibility = 'hidden';
+		document.getElementsByClassName('s3-l')[0].classList.remove('s3-fix');
+	}
+
+	if (
+		window.scrollY > this.sumFirstTwo - window.scrollY * 0.1 &&
+		window.scrollY < this.sumFirstTwo + window.innerHeight * 0.27
+	) {
+		document.getElementsByClassName('s3-title')[0].style.top = `${window.scrollY - this.sumFirstTwo}px`;
+	} else if (window.scrollY < this.sumFirstTwo) {
+		document.getElementsByClassName('s3-title')[0].style.top = `-${window.scrollY * 0.1}px`;
+	}
+	if (secThreeTrigger && window.scrollY > this.sumFirstTwo + window.innerHeight * 0.25) {
+		document.getElementsByClassName('s3-body-')[0].classList.add('s3-body-anim');
+		secThreeTreshold = false;
+	}
+	if (window.scrollY >= this.sumFirstTwo + window.innerHeight * 0.2) {
+		// document.getElementsByClassName('s3-body')[0].classList.add('s3-body-anim');
 	}
 	if (window.scrollY < this.changeHeight) {
 		document.getElementsByClassName(`sec-5-background`)[0].style.backgroundColor = '';
