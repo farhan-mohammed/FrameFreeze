@@ -95,6 +95,7 @@ body {
 #mainNav .logo-img {
   height: 10vh;
   margin: 1vh 1rem;
+  margin-left: 0;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
@@ -610,10 +611,7 @@ body {
 .s3-fix {
   position: fixed;
   top: 10vh;
-  left: 50%;
   margin: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .footer-trans {
@@ -956,6 +954,7 @@ body {
 }
 
 .sec-6 {
+  color: black;
   z-index: 6;
   padding-bottom: 33.84vw;
 }
