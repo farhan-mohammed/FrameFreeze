@@ -4,7 +4,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	height: 100%;
-	width: 100%;
+	width: 160%;
 	padding-top: 10vh;
 	&-bg {
 		&-1 {
@@ -38,8 +38,8 @@
 		}
 		&-3 {
 			z-index: 10;
-			&:first-child{
-				z-index:9;
+			&:first-child {
+				z-index: 9;
 			}
 		}
 		&-glare {
