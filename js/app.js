@@ -53,7 +53,7 @@ section1Trigger = () => {
 	if (triggers.sec3.lockTrigger && scrolled > sectionHeights[1]) {
 		document.getElementsByClassName('s3-cavern-text-con')[0].style.position = 'absolute';
 	}
-	if (triggers.sec5.colorTrigger && scrolled > sectionHeights[3] + this.quarterHeight) {
+	if (triggers.sec5.colorTrigger && scrolled > sectionHeights[3] - this.quarterHeight) {
 		triggers.sec5.colorTrigger = false;
 		document.getElementsByClassName('s5-background')[0].classList.add('s5-light');
 		document.getElementsByClassName('s5-body')[0].classList.add('s5-light');
@@ -63,7 +63,7 @@ section1Trigger = () => {
 		document.getElementsByClassName('s5-body')[0].classList.remove('s5-dark');
 		document.getElementsByClassName('s4-background')[0].classList.remove('s5-dark');
 		document.getElementsByClassName('s5')[0].classList.remove('s5-dark');
-	} else if (!triggers.sec5.colorTrigger && scrolled < sectionHeights[3] + this.quarterHeight) {
+	} else if (!triggers.sec5.colorTrigger && scrolled < sectionHeights[3] - this.quarterHeight) {
 		triggers.sec5.colorTrigger = true;
 		document.getElementsByClassName('s5-background')[0].classList.add('s5-dark');
 		document.getElementsByClassName('s5-body')[0].classList.add('s5-dark');
