@@ -301,6 +301,19 @@ body {
           justify-content: center;
 }
 
+@media (min-aspect-ratio: 7 / 8) {
+  .s2-con-text {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #09253c;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto 0;
+    margin-right: 10px;
+  }
+}
+
 .s2-con-text__title {
   font-size: 2.5em;
   line-height: 90%;
@@ -626,6 +639,12 @@ body {
 @media (min-width: 1200px) {
   .s6-img-con {
     width: 1170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s6-img-con {
+    height: 35vh;
   }
 }
 
