@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"sass": "node-sass sass/homepage/main.scss style.css -w"
+		"sass": "node-sass sass/homepage/main.scss style.css -w",
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -16,8 +17,9 @@
 	"bugs": {
 		"url": "https://github.com/farhan-mohammed/FrameFreeze/issues"
 	},
-	"homepage": "https://github.com/farhan-mohammed/FrameFreeze#readme",
+	"homepage": "https://github.com/farhan-mohammed/FrameFreeze",
 	"dependencies": {
+		"gh-pages": "^2.1.1",
 		"node-sass": "^4.12.0"
 	}
 }

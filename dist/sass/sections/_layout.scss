@@ -18,6 +18,9 @@ body {
 	height: 100%;
 	width: 100%;
 }
+body {
+	overflow-x: hidden;
+}
 .frame {
 	width: 100%;
 	height: fit-content;
@@ -62,9 +65,8 @@ body {
 		background-color: yellow;
 	}
 	&5-body {
-		background-color: purple;
 	}
 	&6-body {
-		background-color: royalblue;
+		background-color: $color-bg;
 	}
 }

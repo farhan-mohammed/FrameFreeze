@@ -1,0 +1,59 @@
+.s6 {
+	min-height: 25vh;
+	&-bridge {
+		border-radius: 12%;
+		width: 110vw;
+		position: relative;
+		left: -5vw;
+		background-color: $color-bg;
+	}
+	&-body {
+		display: flex;
+		justify-content: center;
+	}
+	&-info {
+		padding-top: 2rem;
+	}
+	&-socials {
+		color: white;
+		&__title {
+			font-size: 1.75rem;
+			line-height: 90%;
+			font-family: 'Oswald';
+			padding-bottom: 10px;
+		}
+		&__soc {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: space-around;
+			font-size: 2rem;
+
+			& > li {
+				display: inline;
+				& > a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	&-img-con {
+		box-sizing: border-box;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		@include container-mixin;
+		transform: translate(-50%);
+		height: fit-content;
+		&__img {
+			height: 100%;
+			@media (min-width: 768px) {
+				height: auto;
+				width: 145%;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
