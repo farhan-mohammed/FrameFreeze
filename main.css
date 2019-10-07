@@ -276,9 +276,9 @@ body {
   .s2-con {
     padding: 10vh 5vw;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     text-align: center;
   }
 }
@@ -549,6 +549,7 @@ body {
   width: 110vw;
   position: relative;
   left: -5vw;
+  height: 25vh;
   background-color: #040e1a;
 }
 
