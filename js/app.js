@@ -2,8 +2,6 @@
 sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 iconWidth = 80 + 40;
 quarterHeight = 0;
-y = document.getElementsByClassName('s6-img-con__img')[0].clientHeight * (69 / 319);
-document.getElementsByClassName('s6-bridge')[0].style.height = `${y}px`;
 SetVariables = () => {
 	sections = document.getElementsByClassName('sections');
 	secHeight = Array.prototype.map.call(sections, (x) => x.offsetHeight);
@@ -12,8 +10,10 @@ SetVariables = () => {
 		sum += secHeight[i];
 		this.sectionHeights[i] = sum;
 	}
-	y = document.getElementsByClassName('s6-img-con__img')[0].clientHeight * (69 / 319);
-	document.getElementsByClassName('s6-bridge')[0].style.height = `${y}px`;
+	document.getElementsByClassName('s6-bridge')[0].style.height = `${document.getElementsByClassName(
+		's6-img-con__img'
+	)[0].clientHeight *
+		(69 / 319)}px`;
 	this.quarterHeight = document.documentElement.clientHeight / 16;
 };
 SetVariables();
