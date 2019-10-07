@@ -19,7 +19,7 @@
 		box-sizing: border-box;
 		@media (max-aspect-ratio: 7/8) {
 			padding: 10vh 5vw;
-			flex-direction: column;
+			flex-direction: column-reverse;
 			text-align: center;
 		}
 		// Importnat to always ensure spacing at the bottom
