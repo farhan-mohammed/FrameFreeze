@@ -59,7 +59,7 @@
 		transition: color .5s, text-shadow .5s;
 		align-items: flex-end;
 		&-ul {
-			@media (max-width: 950px) {
+			@media (max-width: 1000px) {
 				display: none;
 			}
 			list-style: none;
