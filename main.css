@@ -143,7 +143,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 11vh;
+  height: 9vh;
   z-index: 1000;
   -webkit-transition: height .5s;
   transition: height .5s;
@@ -194,7 +194,7 @@ body {
 }
 
 .header-scrolled.header {
-  height: 12vh;
+  height: 11vh;
 }
 
 .h-logo {
@@ -422,7 +422,7 @@ body {
 .intro-text {
   position: fixed;
   text-align: center;
-  top: 30vh;
+  top: 22.5vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
