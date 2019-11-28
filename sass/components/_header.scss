@@ -1,14 +1,20 @@
+header {
+	position: fixed;
+	height: fit-content;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	align-items: center;
+	transition: height .5s, background-color .5s, padding .5s;
+}
 .header {
-	padding-top: 5vh;
+	padding: 5vh 0 2.5vh;
 	width: 100vw;
 	@include container-mixin;
-	position: fixed;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
 	height: 9vh;
 	z-index: 1000;
-	transition: height .5s;
+	transition: height .5s, background-color .5s, padding .5s;
 	display: flex;
 	flex-direction: row;
 	&-L {
@@ -24,9 +30,25 @@
 		color: white;
 		height: 100%;
 	}
+	&:after {
+		position: fixed;
+		width: 100vw;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
 }
 .header-scrolled.header {
 	height: 11vh;
+	&-con {
+		background-color: #040e1a88;
+	}
+}
+.dark.header-con {
+	background-color: #040e1a;
+	& > .header {
+		padding: 2vh 0;
+	}
 }
 .h {
 	&-logo {
