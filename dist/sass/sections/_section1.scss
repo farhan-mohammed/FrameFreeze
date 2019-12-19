@@ -45,8 +45,7 @@
 	&-text {
 		position: fixed;
 		text-align: center;
-		width: fit-content;
-		top: 20vh;
+		top: 22.5vh;
 		left: 50%;
 		transform: translateX(-50%);
 		font-size: 1rem;
@@ -70,7 +69,10 @@
 			font-family: 'Oswald';
 			letter-spacing: .3rem;
 			font-weight: 300;
-			width: 25rem;
+			width: 80vw;
+			@media (max-aspect-ratio: 1/1) {
+				width: 35rem;
+			}
 		}
 		& > :not(:first-child) {
 			font-size: 1.3em;

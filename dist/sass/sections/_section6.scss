@@ -5,6 +5,7 @@
 		width: 110vw;
 		position: relative;
 		left: -5vw;
+		height: 25vh;
 		background-color: $color-bg;
 	}
 	&-body {
@@ -40,11 +41,14 @@
 	&-img-con {
 		box-sizing: border-box;
 		position: absolute;
-		bottom: 100%;
+		bottom: 98%;
 		left: 50%;
 		@include container-mixin;
 		transform: translate(-50%);
 		height: fit-content;
+		@media (max-width: 768px) {
+			height: 35vh;
+		}
 		&__img {
 			height: 100%;
 			@media (min-width: 768px) {

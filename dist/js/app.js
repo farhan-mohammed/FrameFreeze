@@ -10,12 +10,17 @@ SetVariables = () => {
 		sum += secHeight[i];
 		this.sectionHeights[i] = sum;
 	}
-	y = document.getElementsByClassName('s6-img-con__img')[0].clientHeight * (69 / 319);
-	document.getElementsByClassName('s6-bridge')[0].style.height = `${y}px`;
-	this.quarterHeight = screen.height / 16;
+	document.getElementsByClassName('s6-bridge')[0].style.height = `${document.getElementsByClassName(
+		's6-img-con__img'
+	)[0].clientHeight *
+		(69 / 319)}px`;
+	this.quarterHeight = document.documentElement.clientHeight / 16;
 };
 SetVariables();
 triggers = {
+	header: {
+		scrolled: false
+	},
 	sec1: {
 		titleHidden: false
 	},
@@ -34,6 +39,17 @@ window.addEventListener('scroll', () => {
 });
 section1Trigger = () => {
 	scrolled = window.scrollY;
+	if (scrolled > sectionHeights[0] && !triggers.header.scrolled) {
+		triggers.header.scrolled = true;
+		document.getElementsByClassName('header')[0].classList.add('header-scrolled');
+		document.getElementsByClassName('header-con')[0].classList.add('header-scrolled');
+		console.log('aee');
+	} else if (scrolled < sectionHeights[0] && triggers.header.scrolled) {
+		document.getElementsByClassName('header')[0].classList.remove('header-scrolled');
+		document.getElementsByClassName('header-con')[0].classList.remove('header-scrolled');
+		triggers.header.scrolled = false;
+		console.log('oee');
+	}
 	if (!triggers.sec1.titleHidden && scrolled > sectionHeights[0]) {
 		document.getElementsByClassName('intro-text')[0].style.visibility = 'hidden';
 		document.getElementsByClassName('s3-cavern-text-con')[0].style.visibility = 'visible';
@@ -53,7 +69,7 @@ section1Trigger = () => {
 	if (triggers.sec3.lockTrigger && scrolled > sectionHeights[1]) {
 		document.getElementsByClassName('s3-cavern-text-con')[0].style.position = 'absolute';
 	}
-	if (triggers.sec5.colorTrigger && scrolled > sectionHeights[3] + this.quarterHeight) {
+	if (triggers.sec5.colorTrigger && scrolled > sectionHeights[3] - this.quarterHeight) {
 		triggers.sec5.colorTrigger = false;
 		document.getElementsByClassName('s5-background')[0].classList.add('s5-light');
 		document.getElementsByClassName('s5-body')[0].classList.add('s5-light');
@@ -63,15 +79,19 @@ section1Trigger = () => {
 		document.getElementsByClassName('s5-body')[0].classList.remove('s5-dark');
 		document.getElementsByClassName('s4-background')[0].classList.remove('s5-dark');
 		document.getElementsByClassName('s5')[0].classList.remove('s5-dark');
-	} else if (!triggers.sec5.colorTrigger && scrolled < sectionHeights[3] + this.quarterHeight) {
+		// document.getElementsByClassName('header')[0].classList.add('dark');
+		document.getElementsByClassName('header-con')[0].classList.add('dark');
+	} else if (!triggers.sec5.colorTrigger && scrolled < sectionHeights[3] - this.quarterHeight) {
 		triggers.sec5.colorTrigger = true;
 		document.getElementsByClassName('s5-background')[0].classList.add('s5-dark');
 		document.getElementsByClassName('s5-body')[0].classList.add('s5-dark');
 		document.getElementsByClassName('s4-background')[0].classList.add('s5-dark');
 		document.getElementsByClassName('s5')[0].classList.add('s5-dark');
+		// document.getElementsByClassName('header')[0].classList.remove('dark');
 		document.getElementsByClassName('s5-background')[0].classList.remove('s5-light');
 		document.getElementsByClassName('s5-body')[0].classList.remove('s5-light');
 		document.getElementsByClassName('s4-background')[0].classList.remove('s5-light');
 		document.getElementsByClassName('s5')[0].classList.remove('s5-light');
+		document.getElementsByClassName('header-con')[0].classList.remove('dark');
 	}
 };
