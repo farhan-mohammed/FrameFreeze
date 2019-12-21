@@ -1,0 +1,23 @@
+{
+  "name": "FrameFreeze",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhan-mohammed/FrameFreeze.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhan-mohammed/FrameFreeze/issues"
+  },
+  "homepage": "https://github.com/farhan-mohammed/FrameFreeze#readme",
+  "description": "",
+  "dependencies": {
+    "create-react-app": "^3.3.0"
+  }
+}
