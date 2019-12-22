@@ -3,6 +3,19 @@ import cavernBack from './media/cavernback.png';
 import cavernMid from './media/cavernmid.png';
 import cavernFront from './media/cavernfront.png';
 export default class SectionThree extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { hidden: true };
+	}
+	componentDidMount() {
+		window.addEventListener('scroll', (e) => {
+			if (this.state.hidden === true && this.props.scroll > this.props.clientHeight) {
+				this.setState({ hidden: false });
+			} else if (this.state.hidden === false && this.props.scroll < this.props.clientHeight) {
+				this.setState({ hidden: true });
+			}
+		});
+	}
 	render() {
 		const title = 'Passion Rules';
 		const bodyText =
@@ -12,8 +25,11 @@ export default class SectionThree extends Component {
 				<div className="s3-cavern">
 					<img src={cavernBack} alt="" className="s3-cavern-i s3-cavern-i1" />
 					<img src={cavernMid} alt="" className="s3-cavern-i s3-cavern-i2" />
-					<div className="s3-cavern-text-con" style={{ visibility: 'hidden' }}>
-						<div className="s3-cavern-text">
+					<div className="s3-cavern-text-con">
+						<div
+							className="s3-cavern-text"
+							style={{ visibility: this.state.hidden ? 'hidden' : 'visible' }}
+						>
 							<div className="s3-cavern-text__title">{title}</div>
 							<div className="s3-cavern-text__body">{bodyText}</div>
 						</div>

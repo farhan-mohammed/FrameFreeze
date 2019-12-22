@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import ffne from './media/ffne.png';
+
 export default class SectionTwo extends Component {
 	render() {
 		const title = "Toronto's First ESports Conference";
@@ -9,10 +12,12 @@ export default class SectionTwo extends Component {
 			<div className="sections-body s2-body">
 				<div className="s2-absolute">
 					<div className="s2-con">
-						<div className="s2-con-text">
-							<div className="s2-con-text__title">{title}</div>
-							<div className="s2-con-text__body">{bodyText}</div>
-						</div>
+						<ScrollAnimation animateIn="fadeInLeftBig" offset={0} animateOnce={true}>
+							<div className="s2-con-text">
+								<div className="s2-con-text__title">{title}</div>
+								<div className="s2-con-text__body">{bodyText}</div>
+							</div>
+						</ScrollAnimation>
 						<div className="s2-con-image">
 							<img src={ffne} className="s2-con-image__cn" alt="" />
 						</div>
