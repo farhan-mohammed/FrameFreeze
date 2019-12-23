@@ -1,4 +1,5 @@
 // 7 Sections
+console.log('pooopoo');
 sectionHeights = [ 0, 0, 0, 0, 0, 0, 0 ];
 iconWidth = 80 + 40;
 quarterHeight = 0;

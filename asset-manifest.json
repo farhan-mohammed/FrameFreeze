@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/farhan-mohammed/FrameFreeze/static/css/main.59997e51.chunk.css",
+    "main.js": "/farhan-mohammed/FrameFreeze/static/js/main.5c7e9722.chunk.js",
+    "main.js.map": "/farhan-mohammed/FrameFreeze/static/js/main.5c7e9722.chunk.js.map",
+    "runtime-main.js": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js",
+    "runtime-main.js.map": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js.map",
+    "static/css/2.5bc09813.chunk.css": "/farhan-mohammed/FrameFreeze/static/css/2.5bc09813.chunk.css",
+    "static/js/2.152970f4.chunk.js": "/farhan-mohammed/FrameFreeze/static/js/2.152970f4.chunk.js",
+    "static/js/2.152970f4.chunk.js.map": "/farhan-mohammed/FrameFreeze/static/js/2.152970f4.chunk.js.map",
+    "index.html": "/farhan-mohammed/FrameFreeze/index.html",
+    "precache-manifest.69f495334179db47bfe4d1a74059ba23.js": "/farhan-mohammed/FrameFreeze/precache-manifest.69f495334179db47bfe4d1a74059ba23.js",
+    "service-worker.js": "/farhan-mohammed/FrameFreeze/service-worker.js",
+    "static/css/2.5bc09813.chunk.css.map": "/farhan-mohammed/FrameFreeze/static/css/2.5bc09813.chunk.css.map",
+    "static/css/main.59997e51.chunk.css.map": "/farhan-mohammed/FrameFreeze/static/css/main.59997e51.chunk.css.map",
+    "static/js/2.152970f4.chunk.js.LICENSE": "/farhan-mohammed/FrameFreeze/static/js/2.152970f4.chunk.js.LICENSE",
+    "static/media/cavernback.png": "/farhan-mohammed/FrameFreeze/static/media/cavernback.a7c77607.png",
+    "static/media/cavernfront.png": "/farhan-mohammed/FrameFreeze/static/media/cavernfront.42e115c6.png",
+    "static/media/cavernmid.png": "/farhan-mohammed/FrameFreeze/static/media/cavernmid.ff98895c.png",
+    "static/media/ffne.png": "/farhan-mohammed/FrameFreeze/static/media/ffne.4c9ff011.png",
+    "static/media/footer.png": "/farhan-mohammed/FrameFreeze/static/media/footer.a97a5443.png",
+    "static/media/layer-1.png": "/farhan-mohammed/FrameFreeze/static/media/layer-1.fa1876d1.png",
+    "static/media/layer-2.png": "/farhan-mohammed/FrameFreeze/static/media/layer-2.ae91980e.png",
+    "static/media/layer-3.png": "/farhan-mohammed/FrameFreeze/static/media/layer-3.070e84ed.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7507ed4f.js",
+    "static/css/2.5bc09813.chunk.css",
+    "static/js/2.152970f4.chunk.js",
+    "static/css/main.59997e51.chunk.css",
+    "static/js/main.5c7e9722.chunk.js"
+  ]
+}
