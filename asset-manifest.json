@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FrameFreeze/static/css/main.d458fa13.chunk.css",
+    "main.css": "/FrameFreeze/static/css/main.59997e51.chunk.css",
     "main.js": "/FrameFreeze/static/js/main.6ed0b0db.chunk.js",
     "main.js.map": "/FrameFreeze/static/js/main.6ed0b0db.chunk.js.map",
     "runtime-main.js": "/FrameFreeze/static/js/runtime-main.ec005ad6.js",
@@ -8,9 +8,9 @@
     "static/js/2.7bcc2f93.chunk.js": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js",
     "static/js/2.7bcc2f93.chunk.js.map": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.map",
     "index.html": "/FrameFreeze/index.html",
-    "precache-manifest.aa3a40b1d234e38889c0b62bf2f6082c.js": "/FrameFreeze/precache-manifest.aa3a40b1d234e38889c0b62bf2f6082c.js",
+    "precache-manifest.a8443136310361a54480ab09e31adfd0.js": "/FrameFreeze/precache-manifest.a8443136310361a54480ab09e31adfd0.js",
     "service-worker.js": "/FrameFreeze/service-worker.js",
-    "static/css/main.d458fa13.chunk.css.map": "/FrameFreeze/static/css/main.d458fa13.chunk.css.map",
+    "static/css/main.59997e51.chunk.css.map": "/FrameFreeze/static/css/main.59997e51.chunk.css.map",
     "static/js/2.7bcc2f93.chunk.js.LICENSE": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE",
     "static/media/cavernback.png": "/FrameFreeze/static/media/cavernback.a7c77607.png",
     "static/media/cavernfront.png": "/FrameFreeze/static/media/cavernfront.42e115c6.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ec005ad6.js",
     "static/js/2.7bcc2f93.chunk.js",
-    "static/css/main.d458fa13.chunk.css",
+    "static/css/main.59997e51.chunk.css",
     "static/js/main.6ed0b0db.chunk.js"
   ]
 }
