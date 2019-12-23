@@ -12,6 +12,7 @@ export default class HeaderItems extends Component {
 		];
 	}
 	renderList = () =>
+		
 		this.topics.map((x) => (
 			<li className="header-mobile-li" key={x.name}>
 				<a className="header-mobile-li_a" href={x.link}>
@@ -21,7 +22,14 @@ export default class HeaderItems extends Component {
 		));
 	render() {
 		if (this.props.active === true) {
-			return <ul className="header-mobile-ul">{this.renderList()}</ul>;
+			return(
+			<ul className="header-mobile-ul">
+				<li className="header-mobile-li">
+					Frame Freeze
+				</li>
+				{this.renderList()}
+			</ul>
+			);
 		}
 		return <div />;
 	}
