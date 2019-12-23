@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a080ea00c819508134f8a7d1b3bddfc3",
+    "revision": "ce3606d13338b1e2d21b55e717c8847c",
     "url": "/farhan-mohammed/FrameFreeze/index.html"
   },
   {
