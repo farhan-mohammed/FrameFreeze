@@ -1,0 +1,316 @@
+$mobile-header-bkp: 1000px;
+.header-R {
+	display: unset;
+	float: right;
+	&-mobile {
+		display: none;
+	}
+	@media (max-width: $mobile-header-bkp) {
+		display: none;
+
+		&-mobile {
+			display: flex;
+		}
+	}
+}
+header {
+	position: fixed;
+	height: fit-content;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+	align-items: center;
+	transition: height .5s, background-color .5s, padding .5s;
+}
+.header {
+	padding: 5vh 2vw 2.5vh 2vw;
+	width: 100vw;
+	@include container-mixin;
+	height: 9vh;
+	z-index: 1000;
+	transition: height .5s, background-color .5s, padding .5s;
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	&-L {
+		height: 100%;
+		flex: 0;
+		z-index: 10;
+	}
+	&-R {
+		margin-right: 1vw;
+		flex: 1;
+		color: white;
+		height: 100%;
+		z-index: 10;
+		&-mobile {
+			margin-right: 2vw;
+			flex: 1;
+			flex-direction: row;
+			justify-content: center;
+			justify-content: flex-end;
+		}
+	}
+	&-dropdown {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		z-index: 5;
+		color: orange;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&.change {
+			background-color: white;
+			animation: .75s dropMenu;
+		}
+		&.unchange {
+			animation: .75s dropMenuRerverse;
+		}
+	}
+	&:after {
+		position: fixed;
+		width: 100vw;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+.header-scrolled.header {
+	height: 11vh;
+	&-con {
+		background-color: #040e1a88;
+	}
+}
+.dark.header-con {
+	background-color: #040e1a;
+	& > .header {
+		padding: 2vh 0;
+	}
+}
+.h {
+	&-logo {
+		height: 100%;
+		width: fit-content;
+		box-sizing: border-box;
+		display: flex;
+		padding: 10px;
+		flex-direction: row;
+		&-title {
+			opacity: 0;
+			transition: opacity 1s;
+			background-image: url("/media/ff.png");
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-size: cover; /* Resize the background image to cover the entire container */
+			box-shadow: 0 8px 6px -6px black;
+		}
+		& img {
+			height: 100%;
+			box-sizing: border-box;
+		}
+	}
+	&-nav {
+		height: 100%;
+		width: stretch;
+		display: flex;
+		justify-content: center;
+		color: white;
+		transition: color .5s, text-shadow .5s;
+		align-items: flex-end;
+		&-ul {
+			@media (max-width: $mobile-header-bkp) {
+				display: none;
+			}
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			flex-direction: row;
+			justify-content: flex-end;
+			color: inherit;
+			align-items: center;
+			&__li {
+				&#contact {
+					border: #fff 1px solid;
+					border-radius: 5px;
+					line-height: 100%;
+					padding: 5px;
+					&:hover {
+						border-style: dotted;
+						border-color: black;
+						background-color: white;
+						color: black;
+						text-shadow: #fff 3px 3px 4px;
+						box-shadow: 0 0 0 -6px #fff;
+					}
+				}
+				font-size: 1.5rem;
+				@media screen and (min-width: 900px) {
+					font-size: 1.5rem;
+				}
+
+				@media screen and (min-width: 1200px) {
+					font-size: 1.5rem;
+				}
+				color: inherit;
+				text-decoration: none;
+				margin-right: 15px;
+				font-family: 'Palanquin';
+				text-shadow: #000 3px 3px 4px;
+				box-shadow: 0 0 0 -6px black;
+				& > a {
+					color: inherit;
+					text-decoration: none;
+
+					&:active,
+					&:hover,
+					&:visited {
+						text-decoration: none;
+						color: inherit;
+					}
+				}
+			}
+		}
+	}
+}
+.header-mobile {
+	&-ul {
+		list-style: none;
+		color: inherit;
+		padding-bottom: 15vh;
+	}
+	&-li {
+		font-family: 'Oswald';
+		color: #52adf3;
+		text-shadow: #ddd 3px 3px 4px;
+		font-size: 7.5vh;
+		&:active,
+		&:hover {
+			text-shadow: none;
+			font-size: 8vh;
+		}
+		&_a {
+			color: inherit;
+			text-decoration: none;
+			&:hover,
+			&:active,
+			&:visited {
+				color: inherit;
+			}
+		}
+	}
+	&__btn {
+		z-index: 10;
+	}
+}
+.header-scrolled > .header-L > .h {
+	&-logo {
+		& > .h-logo-title {
+			opacity: 1;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	#about {
+		display: none;
+	}
+}
+
+.dark {
+	& > .header-R > .h-nav {
+		color: black;
+		& > ul {
+			& > li {
+				text-shadow: #fff 3px 3px 4px;
+				box-shadow: 0 0 0 -6px #fff;
+				&#contact {
+					border-color: black;
+					&:hover {
+						border-style: dotted;
+						border-color: white;
+						background-color: black;
+						color: white;
+						text-shadow: #000 3px 3px 4px;
+						box-shadow: 0 0 0 -6px #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+// --- Hamburger menu boys
+.ham-container {
+	display: inline-block;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #afafaf;
+	margin: 6px 0;
+	transition: 0.2s;
+}
+.bar1 {
+	background-color: #fff;
+}
+.bar2 {
+	background-color: #52adf3;
+}
+.change {
+	& .bar1 {
+		transform: rotate(-45deg) translate(-9px, 6px);
+		background-color: #afafaf;
+	}
+	.bar2 {
+		opacity: 0;
+	}
+	.bar3 {
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}
+@keyframes dropMenu {
+	0% {
+		display: unset;
+		background-color: none;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	67% {
+		background-color: white;
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	}
+	100% {
+		background-color: white;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+}
+@keyframes dropMenuRerverse {
+	100% {
+		display: none;
+		background-color: none;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	99% {
+		display: unset;
+	}
+	33% {
+		background-color: white;
+		clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+	}
+	0% {
+		background-color: white;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		display: unset;
+	}
+}

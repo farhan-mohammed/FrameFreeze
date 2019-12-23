@@ -40,17 +40,17 @@ window.addEventListener('scroll', () => {
 });
 section1Trigger = () => {
 	scrolled = window.scrollY;
-	if (scrolled > sectionHeights[0] && !triggers.header.scrolled) {
-		triggers.header.scrolled = true;
-		document.getElementsByClassName('header')[0].classList.add('header-scrolled');
-		document.getElementsByClassName('header-con')[0].classList.add('header-scrolled');
-		console.log('aee');
-	} else if (scrolled < sectionHeights[0] && triggers.header.scrolled) {
-		document.getElementsByClassName('header')[0].classList.remove('header-scrolled');
-		document.getElementsByClassName('header-con')[0].classList.remove('header-scrolled');
-		triggers.header.scrolled = false;
-		console.log('oee');
-	}
+	// if (scrolled > sectionHeights[0] && !triggers.header.scrolled) {
+	// 	triggers.header.scrolled = true;
+	// 	document.getElementsByClassName('header')[0].classList.add('header-scrolled');
+	// 	document.getElementsByClassName('header-con')[0].classList.add('header-scrolled');
+	// 	console.log('aee');
+	// } else if (scrolled < sectionHeights[0] && triggers.header.scrolled) {
+	// 	document.getElementsByClassName('header')[0].classList.remove('header-scrolled');
+	// 	document.getElementsByClassName('header-con')[0].classList.remove('header-scrolled');
+	// 	triggers.header.scrolled = false;
+	// 	console.log('oee');
+	// }
 	if (!triggers.sec1.titleHidden && scrolled > sectionHeights[0]) {
 		document.getElementsByClassName('intro-text')[0].style.visibility = 'hidden';
 		document.getElementsByClassName('s3-cavern-text-con')[0].style.visibility = 'visible';
@@ -61,11 +61,11 @@ section1Trigger = () => {
 		triggers.sec1.titleHidden = false;
 	}
 
-	if (triggers.sec2.textTrigger && scrolled > sectionHeights[0] * 0.5) {
-		document.getElementsByClassName('s2-con-text')[0].style.visibility = 'visible';
-		document.getElementsByClassName('s2-con-text')[0].classList.add('animated', 'fadeInLeftBig');
-		triggers.sec2.textTrigger = false;
-	}
+	// if (triggers.sec2.textTrigger && scrolled > sectionHeights[0] * 0.5) {
+	// 	document.getElementsByClassName('s2-con-text')[0].style.visibility = 'visible';
+	// 	document.getElementsByClassName('s2-con-text')[0].classList.add('animated', 'fadeInLeftBig');
+	// 	triggers.sec2.textTrigger = false;
+	// }
 
 	if (triggers.sec3.lockTrigger && scrolled > sectionHeights[1]) {
 		document.getElementsByClassName('s3-cavern-text-con')[0].style.position = 'absolute';
