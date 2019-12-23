@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/farhan-mohammed/FrameFreeze/precache-manifest.afb148e467e81c107a0003fd4ab8ce05.js"
+  "/farhan-mohammed/FrameFreeze/precache-manifest.c70cc75e1f6e6e842fd454791cab0e9a.js"
 );
 
 self.addEventListener('message', (event) => {
