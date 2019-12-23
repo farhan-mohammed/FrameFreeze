@@ -181,20 +181,26 @@ header {
 }
 .header-mobile {
 	&-ul {
-		flex:1;
+		width:100%;
+		margin: 15px;
 		list-style: none;
 		color: inherit;
 		padding-bottom: 15vh;
-		background-color: green;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
 	}
-	&-li {
+	&-li{
+		width:100%;
 		font-family: 'Oswald';
 		color: #52adf3;
+		background-color: #efefef;
 		text-align: center;
-		font-size: 5.5vh;
-
-		background-color: pink;
-		margin-bottom:0.75vh;
+		font-size: 5vh;
+		margin: 0.5vh;
+		&:hover{
+			background-color: #e1e1e1
+		}
 		&:active,
 		&_a {
 			color: inherit;
@@ -205,11 +211,16 @@ header {
 				color: inherit;
 			}
 		}
-		
-		&__heading {
-			color: inherit;
-		}
 	}
+	&-li-head{
+		font-family: 'Oswald';
+		color: $color-blue;
+		text-align: center;
+		//background-color: pink;
+		font-size: 7vh;
+		text-transform: uppercase;
+	}
+
 	&__btn {
 		z-index: 10;
 	}
