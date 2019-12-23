@@ -181,20 +181,21 @@ header {
 }
 .header-mobile {
 	&-ul {
+		flex:1;
 		list-style: none;
 		color: inherit;
 		padding-bottom: 15vh;
+		background-color: green;
 	}
 	&-li {
 		font-family: 'Oswald';
 		color: #52adf3;
-		text-shadow: #ddd 3px 3px 4px;
-		font-size: 7.5vh;
+		text-align: center;
+		font-size: 5.5vh;
+
+		background-color: pink;
+		margin-bottom:0.75vh;
 		&:active,
-		&:hover {
-			text-shadow: none;
-			font-size: 8vh;
-		}
 		&_a {
 			color: inherit;
 			text-decoration: none;
@@ -203,6 +204,10 @@ header {
 			&:visited {
 				color: inherit;
 			}
+		}
+		
+		&__heading {
+			color: inherit;
 		}
 	}
 	&__btn {
