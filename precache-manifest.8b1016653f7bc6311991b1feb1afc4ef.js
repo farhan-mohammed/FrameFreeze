@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0dec4bb5b4c2ef0c06d5cf13c2735283",
+    "revision": "0823c3e778d6615d18eb52c4e17dd904",
     "url": "/farhan-mohammed/FrameFreeze/index.html"
   },
   {
-    "revision": "8a56ba9fc346524190be",
-    "url": "/farhan-mohammed/FrameFreeze/static/css/2.5bc09813.chunk.css"
-  },
-  {
-    "revision": "29a21fd8c05d6f72db71",
+    "revision": "677d256cd99a2b9c7c98",
     "url": "/farhan-mohammed/FrameFreeze/static/css/main.d458fa13.chunk.css"
   },
   {
-    "revision": "8a56ba9fc346524190be",
-    "url": "/farhan-mohammed/FrameFreeze/static/js/2.543ed965.chunk.js"
+    "revision": "2bef88961bcf61631f3f",
+    "url": "/farhan-mohammed/FrameFreeze/static/js/2.7bcc2f93.chunk.js"
   },
   {
     "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/farhan-mohammed/FrameFreeze/static/js/2.543ed965.chunk.js.LICENSE"
+    "url": "/farhan-mohammed/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE"
   },
   {
-    "revision": "29a21fd8c05d6f72db71",
-    "url": "/farhan-mohammed/FrameFreeze/static/js/main.cbc949a8.chunk.js"
+    "revision": "677d256cd99a2b9c7c98",
+    "url": "/farhan-mohammed/FrameFreeze/static/js/main.3f39afe3.chunk.js"
   },
   {
     "revision": "e3522757ad090dde22b1",
