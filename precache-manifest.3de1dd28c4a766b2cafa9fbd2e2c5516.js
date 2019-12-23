@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "018271046e89059f337cade8d1f3aaa5",
+    "revision": "a080ea00c819508134f8a7d1b3bddfc3",
     "url": "/farhan-mohammed/FrameFreeze/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/farhan-mohammed/FrameFreeze/static/js/2.913cd441.chunk.js.LICENSE"
   },
   {
-    "revision": "4a5a9fbf1ed3753bb216",
-    "url": "/farhan-mohammed/FrameFreeze/static/js/main.07663a3b.chunk.js"
+    "revision": "687b6d98989b57ef4269",
+    "url": "/farhan-mohammed/FrameFreeze/static/js/main.c87c456e.chunk.js"
   },
   {
     "revision": "e3522757ad090dde22b1",

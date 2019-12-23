@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/farhan-mohammed/FrameFreeze/static/js/main.07663a3b.chunk.js",
-    "main.js.map": "/farhan-mohammed/FrameFreeze/static/js/main.07663a3b.chunk.js.map",
+    "main.js": "/farhan-mohammed/FrameFreeze/static/js/main.c87c456e.chunk.js",
+    "main.js.map": "/farhan-mohammed/FrameFreeze/static/js/main.c87c456e.chunk.js.map",
     "runtime-main.js": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js",
     "runtime-main.js.map": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js.map",
     "static/css/2.5bc09813.chunk.css": "/farhan-mohammed/FrameFreeze/static/css/2.5bc09813.chunk.css",
     "static/js/2.913cd441.chunk.js": "/farhan-mohammed/FrameFreeze/static/js/2.913cd441.chunk.js",
     "static/js/2.913cd441.chunk.js.map": "/farhan-mohammed/FrameFreeze/static/js/2.913cd441.chunk.js.map",
     "index.html": "/farhan-mohammed/FrameFreeze/index.html",
-    "precache-manifest.fb32693a7e158c913c196935990182d1.js": "/farhan-mohammed/FrameFreeze/precache-manifest.fb32693a7e158c913c196935990182d1.js",
+    "precache-manifest.3de1dd28c4a766b2cafa9fbd2e2c5516.js": "/farhan-mohammed/FrameFreeze/precache-manifest.3de1dd28c4a766b2cafa9fbd2e2c5516.js",
     "service-worker.js": "/farhan-mohammed/FrameFreeze/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/farhan-mohammed/FrameFreeze/static/css/2.5bc09813.chunk.css.map",
     "static/js/2.913cd441.chunk.js.LICENSE": "/farhan-mohammed/FrameFreeze/static/js/2.913cd441.chunk.js.LICENSE",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.7507ed4f.js",
     "static/css/2.5bc09813.chunk.css",
     "static/js/2.913cd441.chunk.js",
-    "static/js/main.07663a3b.chunk.js"
+    "static/js/main.c87c456e.chunk.js"
   ]
 }
