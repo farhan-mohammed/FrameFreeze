@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/farhan-mohammed/FrameFreeze/static/css/main.d458fa13.chunk.css",
-    "main.js": "/farhan-mohammed/FrameFreeze/static/js/main.3f39afe3.chunk.js",
-    "main.js.map": "/farhan-mohammed/FrameFreeze/static/js/main.3f39afe3.chunk.js.map",
-    "runtime-main.js": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js",
-    "runtime-main.js.map": "/farhan-mohammed/FrameFreeze/static/js/runtime-main.7507ed4f.js.map",
-    "static/js/2.7bcc2f93.chunk.js": "/farhan-mohammed/FrameFreeze/static/js/2.7bcc2f93.chunk.js",
-    "static/js/2.7bcc2f93.chunk.js.map": "/farhan-mohammed/FrameFreeze/static/js/2.7bcc2f93.chunk.js.map",
-    "index.html": "/farhan-mohammed/FrameFreeze/index.html",
-    "precache-manifest.8b1016653f7bc6311991b1feb1afc4ef.js": "/farhan-mohammed/FrameFreeze/precache-manifest.8b1016653f7bc6311991b1feb1afc4ef.js",
-    "service-worker.js": "/farhan-mohammed/FrameFreeze/service-worker.js",
-    "static/css/main.d458fa13.chunk.css.map": "/farhan-mohammed/FrameFreeze/static/css/main.d458fa13.chunk.css.map",
-    "static/js/2.7bcc2f93.chunk.js.LICENSE": "/farhan-mohammed/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE",
-    "static/media/cavernback.png": "/farhan-mohammed/FrameFreeze/static/media/cavernback.a7c77607.png",
-    "static/media/cavernfront.png": "/farhan-mohammed/FrameFreeze/static/media/cavernfront.42e115c6.png",
-    "static/media/cavernmid.png": "/farhan-mohammed/FrameFreeze/static/media/cavernmid.ff98895c.png",
-    "static/media/ffne.png": "/farhan-mohammed/FrameFreeze/static/media/ffne.4c9ff011.png",
-    "static/media/footer.png": "/farhan-mohammed/FrameFreeze/static/media/footer.a97a5443.png",
-    "static/media/layer-1.png": "/farhan-mohammed/FrameFreeze/static/media/layer-1.fa1876d1.png",
-    "static/media/layer-2.png": "/farhan-mohammed/FrameFreeze/static/media/layer-2.ae91980e.png",
-    "static/media/layer-3.png": "/farhan-mohammed/FrameFreeze/static/media/layer-3.070e84ed.png"
+    "main.css": "/FrameFreeze/static/css/main.d458fa13.chunk.css",
+    "main.js": "/FrameFreeze/static/js/main.6ed0b0db.chunk.js",
+    "main.js.map": "/FrameFreeze/static/js/main.6ed0b0db.chunk.js.map",
+    "runtime-main.js": "/FrameFreeze/static/js/runtime-main.ec005ad6.js",
+    "runtime-main.js.map": "/FrameFreeze/static/js/runtime-main.ec005ad6.js.map",
+    "static/js/2.7bcc2f93.chunk.js": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js",
+    "static/js/2.7bcc2f93.chunk.js.map": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.map",
+    "index.html": "/FrameFreeze/index.html",
+    "precache-manifest.aa3a40b1d234e38889c0b62bf2f6082c.js": "/FrameFreeze/precache-manifest.aa3a40b1d234e38889c0b62bf2f6082c.js",
+    "service-worker.js": "/FrameFreeze/service-worker.js",
+    "static/css/main.d458fa13.chunk.css.map": "/FrameFreeze/static/css/main.d458fa13.chunk.css.map",
+    "static/js/2.7bcc2f93.chunk.js.LICENSE": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE",
+    "static/media/cavernback.png": "/FrameFreeze/static/media/cavernback.a7c77607.png",
+    "static/media/cavernfront.png": "/FrameFreeze/static/media/cavernfront.42e115c6.png",
+    "static/media/cavernmid.png": "/FrameFreeze/static/media/cavernmid.ff98895c.png",
+    "static/media/ffne.png": "/FrameFreeze/static/media/ffne.4c9ff011.png",
+    "static/media/footer.png": "/FrameFreeze/static/media/footer.a97a5443.png",
+    "static/media/layer-1.png": "/FrameFreeze/static/media/layer-1.fa1876d1.png",
+    "static/media/layer-2.png": "/FrameFreeze/static/media/layer-2.ae91980e.png",
+    "static/media/layer-3.png": "/FrameFreeze/static/media/layer-3.070e84ed.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7507ed4f.js",
+    "static/js/runtime-main.ec005ad6.js",
     "static/js/2.7bcc2f93.chunk.js",
     "static/css/main.d458fa13.chunk.css",
-    "static/js/main.3f39afe3.chunk.js"
+    "static/js/main.6ed0b0db.chunk.js"
   ]
 }
