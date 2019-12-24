@@ -312,12 +312,16 @@ header {
   margin: 1vh 0vw;
 }
 
+.header-scrolled.header .header-L .h-logo .h-logo-text {
+  color: white;
+}
+
 .dark.header-con {
   background-color: #040e1a;
 }
 
 .dark.header-con > .header {
-  padding: 2vh 0;
+  padding: 2vh 0vw;
 }
 
 .h-logo {
@@ -338,9 +342,6 @@ header {
 }
 
 .h-logo-title {
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
   background-image: url("/media/ff.png");
   background-position: center;
   /* Center the image */
@@ -350,6 +351,18 @@ header {
   /* Resize the background image to cover the entire container */
   -webkit-box-shadow: 0 8px 6px -6px black;
           box-shadow: 0 8px 6px -6px black;
+}
+
+.h-logo-text {
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: color 0.25s, margin 0.25s;
+  transition: color 0.25s, margin 0.25s;
+  text-transform: uppercase;
+  margin-top: -0.5vh;
+  font-family: 'Oswald';
+  font-weight: 100;
+  font-size: 3vh;
+  line-height: 3vh;
 }
 
 .h-logo img {
