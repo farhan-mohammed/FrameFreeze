@@ -25,12 +25,12 @@ header {
 
 }
 .header {
-	padding: 2vh 2vw 2.5vh 2vw;
+	padding: 0vh 2vw 4.5vh 2vw;
 	width: 100vw;
 	@include container-mixin;
 	height: 9vh;
 	z-index: 1000;
-	transition: height .5s, background-color .5s, padding .5s;
+	transition: height .5s, padding .5s;
 	display: flex;
 	flex-direction: row;
 	align-content: space-between;
@@ -38,8 +38,11 @@ header {
 		height: 100%;
 		flex: 0;
 		z-index: 10;
+		margin: 2vh 1vw;
+		transition: height .5s, margin .5s;
 	}
 	&-R {
+		margin-top: 2vh;
 		margin-right: 1vw;
 		flex: 1;
 		color: white;
@@ -83,7 +86,11 @@ header {
 .header-scrolled.header {
 	height: 5vh;
 	&-con {
-		background-color: #040e1a;
+		background-color: #061527;
+	}
+	.header-L{
+		height: 150%;
+		margin: 1vh 0vw;
 	}
 }
 .dark.header-con {
