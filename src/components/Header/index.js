@@ -68,9 +68,9 @@ export default class Header extends Component {
 										FAQ
 									</a>
 								</li>
-								<li id="contact" className="h-nav-ul__li">
+								<li className="h-nav-ul__li">
 									<a href="#" className="hi-nav-ul__li-a">
-										Contact Us
+										Contact
 									</a>
 								</li>
 							</ul>

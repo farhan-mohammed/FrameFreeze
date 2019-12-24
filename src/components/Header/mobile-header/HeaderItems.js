@@ -8,7 +8,7 @@ export default class HeaderItems extends Component {
 			{ name: 'Speakers', link: '#' },
 			{ name: 'Sponsors', link: '#' },
 			{ name: 'FAQ', link: '#' },
-			{ name: 'Contact Us', link: '#' }
+			{ name: 'Contact', link: '#' }
 		];
 	}
 	renderList = () =>
