@@ -21,10 +21,9 @@ header {
 	z-index: 1000;
 	align-items: center;
 	transition: height .5s, background-color .5s, padding .5s;
-
 }
 .header {
-	padding: 0vh 2vw 4.5vh 2vw;
+	padding: 0vh 2vw;
 	width: 100vw;
 	@include container-mixin;
 	height: 9vh;
@@ -37,13 +36,13 @@ header {
 		height: 100%;
 		flex: 0;
 		z-index: 10;
-		margin: 2vh 1vw;
+		margin: 2vh 2vw;
 		transition: height .5s, margin .5s;
 	}
 	&-R {
-		margin-top: 2vh;
 		margin-right: 1vw;
 		flex: 1;
+		align-items: center;
 		color: white;
 		height: 100%;
 		z-index: 10;
@@ -53,6 +52,10 @@ header {
 			flex-direction: row;
 			justify-content: center;
 			justify-content: flex-end;
+			align-items: center;
+			&__btn {
+				height: 27px;
+			}
 		}
 	}
 	&-dropdown {
@@ -83,19 +86,21 @@ header {
 	}
 }
 .header-scrolled.header {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
 	height: 5vh;
 	&-con {
 		background-color: #061527;
 	}
-	.header-L{
-		height: 150%;
+	.header-L {
+		height: 200%;
 		margin: 1vh 0vw;
-		
 		.h-logo{
 			.h-logo-text{
 				color:white;
 			}
 		}
+		margin-top: -2vh;
 	}
 
 }
@@ -111,7 +116,6 @@ header {
 		width: fit-content;
 		box-sizing: border-box;
 		display: flex;
-		padding: 10px;
 		flex-direction: row;
 		&-title {
 			background-image: url("/media/ff.png");
@@ -159,12 +163,16 @@ header {
 			color: inherit;
 			align-items: center;
 			&__li {
-				&:hover{
+				&:hover {
 					@keyframes hover {
-						from {box-shadow: 0px 0px 0px 0px white}
-						to {box-shadow: 0px 5px 0px 0px white}
-					  }
-					animation-name:hover;
+						from {
+							box-shadow: 0px 0px 0px 0px white;
+						}
+						to {
+							box-shadow: 0px 5px 0px 0px white;
+						}
+					}
+					animation-name: hover;
 					animation-duration: 0.25s;
 					animation-fill-mode: forwards;
 				}
@@ -199,25 +207,25 @@ header {
 }
 .header-mobile {
 	&-ul {
-		width:100%;
+		width: 100%;
 		margin: 15px;
 		list-style: none;
 		color: inherit;
 		padding-bottom: 15vh;
-		display:flex;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	&-li{
-		width:100%;
+	&-li {
+		width: 100%;
 		font-family: 'Oswald';
 		color: #52adf3;
 		background-color: #efefef;
 		text-align: center;
 		font-size: 4vh;
 		margin: 0.5vh;
-		&:hover{
-			background-color: #e1e1e1
+		&:hover {
+			background-color: #e1e1e1;
 		}
 		&:active,
 		&_a {
@@ -230,7 +238,7 @@ header {
 			}
 		}
 	}
-	&-li-head{
+	&-li-head {
 		font-family: 'Oswald';
 		color: $color-blue;
 		text-align: center;
@@ -293,10 +301,11 @@ header {
 	width: 35px;
 	height: 5px;
 	background-color: #afafaf;
-	margin: 6px 0;
+	margin-top: 6px;
 	transition: 0.2s;
 }
 .bar1 {
+	margin-top: 0;
 	background-color: #fff;
 }
 .bar2 {
