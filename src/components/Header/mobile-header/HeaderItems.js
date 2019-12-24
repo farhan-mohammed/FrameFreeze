@@ -8,7 +8,7 @@ export default class HeaderItems extends Component {
 			{ name: 'Speakers', link: '#' },
 			{ name: 'Sponsors', link: '#' },
 			{ name: 'FAQ', link: '#' },
-			{ name: 'Contact Us', link: '#' }
+			{ name: 'Contact', link: '#' }
 		];
 	}
 	renderList = () =>
@@ -24,7 +24,7 @@ export default class HeaderItems extends Component {
 		if (this.props.active === true) {
 			return(
 			<ul className="header-mobile-ul">
-				<li className="header-mobile-li">
+				<li className="header-mobile-li-head">
 					Frame Freeze
 				</li>
 				{this.renderList()}

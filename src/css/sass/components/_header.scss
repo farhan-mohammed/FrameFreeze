@@ -21,9 +21,10 @@ header {
 	z-index: 1000;
 	align-items: center;
 	transition: height .5s, background-color .5s, padding .5s;
+
 }
 .header {
-	padding: 5vh 2vw 2.5vh 2vw;
+	padding: 2vh 2vw 2.5vh 2vw;
 	width: 100vw;
 	@include container-mixin;
 	height: 9vh;
@@ -79,9 +80,9 @@ header {
 	}
 }
 .header-scrolled.header {
-	height: 11vh;
+	height: 5vh;
 	&-con {
-		background-color: #040e1a88;
+		background-color: #040e1a;
 	}
 }
 .dark.header-con {
@@ -135,23 +136,18 @@ header {
 			color: inherit;
 			align-items: center;
 			&__li {
-				&#contact {
-					border: #fff 1px solid;
-					border-radius: 5px;
-					line-height: 100%;
-					padding: 5px;
-					&:hover {
-						border-style: dotted;
-						border-color: black;
-						background-color: white;
-						color: black;
-						text-shadow: #fff 3px 3px 4px;
-						box-shadow: 0 0 0 -6px #fff;
-					}
+				&:hover{
+					@keyframes hover {
+						from {box-shadow: 0px 0px 0px 0px white}
+						to {box-shadow: 0px 5px 0px 0px white}
+					  }
+					animation-name:hover;
+					animation-duration: 0.25s;
+					animation-fill-mode: forwards;
 				}
 				font-size: 1.5rem;
 				@media screen and (min-width: 900px) {
-					font-size: 1.5rem;
+					font-size: 1.3rem;
 				}
 
 				@media screen and (min-width: 1200px) {
@@ -159,10 +155,10 @@ header {
 				}
 				color: inherit;
 				text-decoration: none;
-				margin-right: 15px;
-				font-family: 'Palanquin';
-				text-shadow: #000 3px 3px 4px;
-				box-shadow: 0 0 0 -6px black;
+				text-transform: uppercase;
+				margin-right: 25px;
+				font-family: 'Oswald';
+				font-weight: 0;
 				& > a {
 					color: inherit;
 					text-decoration: none;
@@ -180,20 +176,26 @@ header {
 }
 .header-mobile {
 	&-ul {
-		flex:1;
+		width:100%;
+		margin: 15px;
 		list-style: none;
 		color: inherit;
 		padding-bottom: 15vh;
-		background-color: green;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
 	}
-	&-li {
+	&-li{
+		width:100%;
 		font-family: 'Oswald';
 		color: #52adf3;
+		background-color: #efefef;
 		text-align: center;
-		font-size: 5.5vh;
-
-		background-color: pink;
-		margin-bottom:0.75vh;
+		font-size: 4vh;
+		margin: 0.5vh;
+		&:hover{
+			background-color: #e1e1e1
+		}
 		&:active,
 		&_a {
 			color: inherit;
@@ -204,11 +206,16 @@ header {
 				color: inherit;
 			}
 		}
-		
-		&__heading {
-			color: inherit;
-		}
 	}
+	&-li-head{
+		font-family: 'Oswald';
+		color: $color-blue;
+		text-align: center;
+		//background-color: pink;
+		font-size: 7vh;
+		text-transform: uppercase;
+	}
+
 	&__btn {
 		z-index: 10;
 	}
