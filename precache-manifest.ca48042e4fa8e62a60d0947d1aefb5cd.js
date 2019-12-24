@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38513fbddc3d15b59c78e760d97e0fc8",
+    "revision": "a851988ae9b772a78edca8b927a9c0ca",
     "url": "/FrameFreeze/index.html"
   },
   {
-    "revision": "21815c56edcb6b30c605",
-    "url": "/FrameFreeze/static/css/main.bc856aa7.chunk.css"
+    "revision": "0c6a22fda193d45bf3c1",
+    "url": "/FrameFreeze/static/css/main.4d1a01bd.chunk.css"
   },
   {
     "revision": "2bef88961bcf61631f3f",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE"
   },
   {
-    "revision": "21815c56edcb6b30c605",
+    "revision": "0c6a22fda193d45bf3c1",
     "url": "/FrameFreeze/static/js/main.60a8140c.chunk.js"
   },
   {
