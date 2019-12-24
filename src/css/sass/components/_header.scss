@@ -95,13 +95,19 @@ header {
 	.header-L {
 		height: 200%;
 		margin: 1vh 0vw;
+		.h-logo{
+			.h-logo-text{
+				color:white;
+			}
+		}
 		margin-top: -2vh;
 	}
+
 }
 .dark.header-con {
 	background-color: #040e1a;
 	& > .header {
-		padding: 2vh 0;
+		padding: 2vh 0vw;
 	}
 }
 .h {
@@ -112,13 +118,22 @@ header {
 		display: flex;
 		flex-direction: row;
 		&-title {
-			opacity: 0;
-			transition: opacity 1s;
 			background-image: url("/media/ff.png");
 			background-position: center; /* Center the image */
 			background-repeat: no-repeat; /* Do not repeat the image */
 			background-size: cover; /* Resize the background image to cover the entire container */
 			box-shadow: 0 8px 6px -6px black;
+		}
+		&-text {
+			color:rgba(255, 255, 255, 0);
+			transition: color 0.25s, margin 0.25s;
+			text-transform: uppercase;
+			margin-top:-0.5vh;
+			font-family: 'Oswald';
+			font-weight: 100;
+			font-size: 3vh;
+			line-height: 3vh;
+			
 		}
 		& img {
 			height: 100%;

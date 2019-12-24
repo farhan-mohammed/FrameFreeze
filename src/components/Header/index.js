@@ -42,6 +42,7 @@ export default class Header extends Component {
 						<div className="h-logo">
 							<img src={thumbnail} alt="" />
 							<img className="h-logo-title" src="media/ff.png" alt="" />
+							<p className="h-logo-text">Frame Freeze</p>
 						</div>
 					</div>
 					<MobileHeader className="header-R-mobile" />
