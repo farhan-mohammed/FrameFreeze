@@ -54,25 +54,51 @@
 		flex-direction: column;
 		justify-content: center;
 		align-content: center;
+		@media (max-aspect-ratio: 4/8) {
+		}
+		@media (max-width: $mobile-header-bkp) {
+			top: 15vh;
+		}
+		@media (max-height: 700px) {
+			top: 15vh;
+		}
+
 		@media (max-aspect-ratio: 8/8) {
 			top: 18vh;
 		}
 		@media (max-aspect-ratio: 6/8) {
+			top: 20vh;
 		}
-		@media (max-aspect-ratio: 4/8) {
+		@media (max-aspect-ratio: 2/3) {
+			top: 10vh;
 		}
+		@media (max-height: 800px) {
+			font-size: .75rem;
+			top: 12vh;
+		}
+		@media (max-height: 800px) and (min-width: 600px) {
+			top: 18vh;
+		}
+		@media (max-height: 500px) {
+			font-size: .5rem;
+			top: 15vh;
+		}
+
+		@media (max-height: 200px) {
+			font-size: .25rem;
+			top: 15vh;
+		}
+
 		font-family: 'Comfortaa';
 		&-h1 {
 			text-transform: uppercase;
 			font-size: 8em;
 			line-height: 100%;
 			font-family: 'Oswald';
+			text-align: center;
 			letter-spacing: .3rem;
 			font-weight: 300;
 			width: 80vw;
-			@media (max-aspect-ratio: 1/1) {
-				width: 35rem;
-			}
 		}
 		& > :not(:first-child) {
 			font-size: 1.3em;
