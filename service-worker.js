@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FrameFreeze/precache-manifest.8f95d0460e7aa7ff05240f4dfe506742.js"
+  "/FrameFreeze/precache-manifest.b9d9cafe31064b782f49fa84d9c8a18c.js"
 );
 
 self.addEventListener('message', (event) => {

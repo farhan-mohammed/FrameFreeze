@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/FrameFreeze/static/css/main.f8c1e376.chunk.css",
-    "main.js": "/FrameFreeze/static/js/main.9f4e82bf.chunk.js",
-    "main.js.map": "/FrameFreeze/static/js/main.9f4e82bf.chunk.js.map",
+    "main.css": "/FrameFreeze/static/css/main.ce77a98c.chunk.css",
+    "main.js": "/FrameFreeze/static/js/main.da863a46.chunk.js",
+    "main.js.map": "/FrameFreeze/static/js/main.da863a46.chunk.js.map",
     "runtime-main.js": "/FrameFreeze/static/js/runtime-main.ec005ad6.js",
     "runtime-main.js.map": "/FrameFreeze/static/js/runtime-main.ec005ad6.js.map",
     "static/js/2.7bcc2f93.chunk.js": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js",
     "static/js/2.7bcc2f93.chunk.js.map": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.map",
     "index.html": "/FrameFreeze/index.html",
-    "precache-manifest.8f95d0460e7aa7ff05240f4dfe506742.js": "/FrameFreeze/precache-manifest.8f95d0460e7aa7ff05240f4dfe506742.js",
+    "precache-manifest.b9d9cafe31064b782f49fa84d9c8a18c.js": "/FrameFreeze/precache-manifest.b9d9cafe31064b782f49fa84d9c8a18c.js",
     "service-worker.js": "/FrameFreeze/service-worker.js",
-    "static/css/main.f8c1e376.chunk.css.map": "/FrameFreeze/static/css/main.f8c1e376.chunk.css.map",
+    "static/css/main.ce77a98c.chunk.css.map": "/FrameFreeze/static/css/main.ce77a98c.chunk.css.map",
     "static/js/2.7bcc2f93.chunk.js.LICENSE": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE",
     "static/media/cavernback.png": "/FrameFreeze/static/media/cavernback.a7c77607.png",
     "static/media/cavernfront.png": "/FrameFreeze/static/media/cavernfront.42e115c6.png",
     "static/media/cavernmid.png": "/FrameFreeze/static/media/cavernmid.ff98895c.png",
     "static/media/ffne.png": "/FrameFreeze/static/media/ffne.4c9ff011.png",
-    "static/media/footer.png": "/FrameFreeze/static/media/footer.a97a5443.png",
+    "static/media/footer.png": "/FrameFreeze/static/media/footer.55072f00.png",
     "static/media/layer-1.png": "/FrameFreeze/static/media/layer-1.fa1876d1.png",
     "static/media/layer-2.png": "/FrameFreeze/static/media/layer-2.ae91980e.png",
     "static/media/layer-3.png": "/FrameFreeze/static/media/layer-3.070e84ed.png"
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.ec005ad6.js",
     "static/js/2.7bcc2f93.chunk.js",
-    "static/css/main.f8c1e376.chunk.css",
-    "static/js/main.9f4e82bf.chunk.js"
+    "static/css/main.ce77a98c.chunk.css",
+    "static/js/main.da863a46.chunk.js"
   ]
 }

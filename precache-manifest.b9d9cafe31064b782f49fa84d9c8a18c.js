@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9498443e67432832ee748f9fba8b02f7",
+    "revision": "c46c9e5c44e25c35508c57904431bcc4",
     "url": "/FrameFreeze/index.html"
   },
   {
-    "revision": "dbc2d4ced602610f5afb",
-    "url": "/FrameFreeze/static/css/main.f8c1e376.chunk.css"
+    "revision": "82beff51ee0eb0d17d47",
+    "url": "/FrameFreeze/static/css/main.ce77a98c.chunk.css"
   },
   {
     "revision": "2bef88961bcf61631f3f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FrameFreeze/static/js/2.7bcc2f93.chunk.js.LICENSE"
   },
   {
-    "revision": "dbc2d4ced602610f5afb",
-    "url": "/FrameFreeze/static/js/main.9f4e82bf.chunk.js"
+    "revision": "82beff51ee0eb0d17d47",
+    "url": "/FrameFreeze/static/js/main.da863a46.chunk.js"
   },
   {
     "revision": "5365fe8e4ff0388f03e7",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FrameFreeze/static/media/ffne.4c9ff011.png"
   },
   {
-    "revision": "a97a5443dc1019a233379ee00bb0c919",
-    "url": "/FrameFreeze/static/media/footer.a97a5443.png"
+    "revision": "55072f00380cdd56eca71c51440413ad",
+    "url": "/FrameFreeze/static/media/footer.55072f00.png"
   },
   {
     "revision": "fa1876d1e77acfe3aa6bb7fadc130bd4",
