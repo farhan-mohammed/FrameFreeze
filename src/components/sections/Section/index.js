@@ -46,11 +46,11 @@ export default class Section extends Component {
 					<div className="sections-body s3-body" />
 					<SectionThree scroll={this.state.windowScroll} clientHeight={this.state.clientHeight} />
 				</div>
-				<div className="sections s4">
+				<div className="sections s4" style={{ display: 'none' }}>
 					<SectionFour scroll={this.state.windowScroll} clientHeight={this.state.clientHeight} />
 					<div className="sections-background s4-background" />
 				</div>
-				<div className="sections s5 s5-dark">
+				<div className="sections s5 s5-dark" style={{ display: 'none' }}>
 					<SectionFive scroll={this.state.windowScroll} clientHeight={this.state.clientHeight} />
 					<div className="sections-background s5-background  s5-dark" />
 				</div>

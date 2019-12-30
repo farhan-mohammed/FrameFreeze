@@ -7,7 +7,7 @@
 	}
 	&-dark {
 		color: white;
-		background-color: $color-bg;
+		background-color: orange;
 	}
 	&-background {
 		z-index: -1;
@@ -64,6 +64,23 @@
 			justify-content: center;
 			display: flex;
 			align-items: center;
+		}
+		&__list {
+			display: flex;
+			flex-direction: column;
+		}
+		&__item {
+			&q {
+				text-align: left;
+
+				width: 100%;
+				background-color: red;
+			}
+			&a {
+				text-align: left;
+
+				width: 100%;
+			}
 		}
 	}
 }

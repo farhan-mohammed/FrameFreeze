@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import footerimg from './media/footer.png';
 export default class SectionSix extends Component {
 	socials = [
-		{ name: 'facebook', tag: 'facebook f', link: '#' },
-		{ name: 'instagram', tag: 'instagram', link: '#' },
-		{ name: 'twitter', tag: 'twitter', link: '#' },
-		{ name: 'email', tag: 'envelope outline', link: '#' }
+		{ name: 'facebook', tag: 'fab fa-facebook-f', link: '#' },
+		{ name: 'instagram', tag: 'fab fa-instagram', link: '#' },
+		{ name: 'twitter', tag: 'fab fa-twitter', link: '#' },
+		{ name: 'email', tag: 'far fa-envelope', link: '#' }
 	];
 	renderList() {
 		return this.socials.map((social) => {
-			const socialtag = `${social.tag} icon`;
 			return (
-				<li key={social.name}>
+				<li key={social.name} className="hvr-wobble-top">
 					<a href={social.link}>
-						<i className={socialtag} />
+						<i className={social.tag} />
 					</a>
 				</li>
 			);

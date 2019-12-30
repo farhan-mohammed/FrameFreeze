@@ -1,16 +1,20 @@
 .s6 {
-	min-height: 25vh;
+	min-height: 18vh;
+	background: linear-gradient($color-bg, $accent-color);
 	&-bridge {
+		background: linear-gradient($color-bg, $accent-color);
+		padding-top: 30vh;
 		border-radius: 12%;
 		width: 110vw;
 		position: relative;
 		left: -5vw;
+		background: $color-bg;
 		height: 25vh;
-		background-color: $color-bg;
 	}
 	&-body {
 		display: flex;
 		justify-content: center;
+		background-color: unset;
 	}
 	&-info {
 		padding-top: 2rem;
